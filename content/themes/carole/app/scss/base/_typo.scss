@@ -3,6 +3,7 @@
 html,
 body {
     font-size: $font-size;
+    line-height: 1.6;
     @media (min-width: $breakpoint-medium) {
         font-size: $font-size-medium;
     }
@@ -19,6 +20,10 @@ a {
     font-size: $font-size;
 }
 
+.navbar {
+    font-size: $font-size-medium;
+}
+
 h1,
 h2,
 h3,
@@ -27,12 +32,15 @@ h5,
 h6 {
     font-family: $font-family-title;
     color: $color-title;
+  
 }
 
 h1 {
     font-size: $font-size-large;
+    
 }
 
 h2 {
     font-size: $font-size-medium;
+    font-weight: bold;
 }

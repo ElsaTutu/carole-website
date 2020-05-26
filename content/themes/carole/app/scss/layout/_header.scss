@@ -3,12 +3,13 @@
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
+  z-index: 1;
   background-color: $color-bg-light;
   
   @media (min-width: $breakpoint-medium) {
     display: flex;
-  justify-content: space-between; 
-  height: 10vh;      
+    justify-content: space-between; 
+    height: 8vh;      
     }
 
 }
@@ -18,13 +19,12 @@
   height: 100vh;
 
     @media (min-width: $breakpoint-medium) {
-    height: 0vh;      
+    height: 0vh;     
     }
 
 }
 
 .nav-links {
-  font-size: $font-size-large;
   margin-bottom: 1em;
 }
 

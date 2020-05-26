@@ -9,9 +9,11 @@
   border-radius: 5px;
   transition-duration: 0.4s;
   font-weight: bold;
+  color: $color-bg;
+  box-shadow: 2px 2px 2px $black-shadow;
 }
 
 .presentation_content_button:hover {
-  background-color: $color-button-hover;
-  color: $color-bg;
+  background-color: $black-shadow;
+  color: $color-text
 }

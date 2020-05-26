@@ -9,7 +9,7 @@ $breakpoint-extra-large: 1200px;
 // Fonts (family, size)
 $font-size: 16px;
 $font-size-medium: 18px;
-$font-size-large: 24px;
+$font-size-large: 30px;
 
 $font-family-content: 'Roboto', sans-serif;
 $font-family-title: 'Roboto slab', serif;
@@ -18,9 +18,10 @@ $font-family-fallback: 'Helvetica', Arial, sans-serif;
 // Couleurs
 $white: #FFF;
 $black: #000;
-$brown: #BA7934;
+$brown: #c77c2b;
 $orange: #F9A146;
 $grey: rgb(240, 238, 238);
+$dark-grey: rgb(177, 176, 176);
 
 // $posts-bg-colors: (
 //     1:#7BC5DE,
@@ -34,6 +35,7 @@ $color-button: $orange;
 $color-button-hover: $brown;
 $color-brand: $brown;
 $color-bg-light: $grey;
+$black-shadow: $dark-grey;
 
 // Animations
 // $duration-slow: 1s;

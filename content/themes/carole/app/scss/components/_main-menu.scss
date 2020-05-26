@@ -1,20 +1,25 @@
-.navbar {
-    font-size: 18px;
-}.main-nav {
+
+.main-nav {
     list-style-type: none;
-}.nav-links,
+}
+.nav-links,
 .logo {
     text-decoration: none;
 }
+
+.logo:hover,
+    .nav-links:hover {
+        color: $color-button;
+    }
+
+
 .main-nav li {
     text-align: center;
     margin: 15px auto;
 }
 .logo {
     display: inline-block;
-    font-size: 22px;
-    margin-top: 10px;
-    margin-left: 20px;
+    margin:0.5em;
 }
 
 .navbar-toggle {
@@ -22,7 +27,7 @@
     top: 10px;
     right: 20px;
     cursor: pointer; 
-    color: $black;
+    color: $color-text;
     font-size: 24px;
 }
 
@@ -33,13 +38,14 @@
 
 .active {
   display: block;
-  background-color: $white;
+  background-color: $color-bg;
   padding: 1em;
 }
 
 .logo:hover,
     .nav-links:hover {
-        text-decoration: underline;
+        transition: color 0.2s;
+        color: $color-button;
     }
 
 
@@ -71,7 +77,7 @@
     }    
     .logo:hover,
     .nav-links:hover {
-        text-decoration: underline;
+        color: $color-button;
     }
 
 }

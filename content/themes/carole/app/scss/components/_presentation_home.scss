@@ -1,15 +1,33 @@
 .presentation {
   display: flex;
   flex-direction: column;
+  margin-bottom: 2em;
+
+  @media (min-width: $breakpoint-medium) {
+    margin-bottom: 3em;
+    }
+    
 }
 
 .presentation_section {
   display: flex;
   flex-direction: column;
-  margin: 1.5em;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  margin-bottom: 1.5em;
 
   @media (min-width: $breakpoint-medium) {
-    flex-direction: row;     
+    flex-direction: row;   
+    align-items: center; 
+    height: 70vh;
+
+    
+     
+        //  &:nth-child(2n+0) {
+        //   background:rgb(241, 240, 240);
+          
+        //   }
+
     }
 }
 
@@ -22,16 +40,38 @@
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
   height: 50vh;
+  margin-top: 2em;
+
+  @media (min-width: $breakpoint-medium) {
+    margin: 1em;
+  
+  
+    }
 }
+
+
 
 .presentation_content {
   display: flex;
   flex-direction: column;
+  text-align: justify;
+  
+
+  @media (min-width: $breakpoint-medium) {
+    margin: 0 3em;   
+    line-height: 1.6;
+    }
 }
 
 .presentation_content_title, 
 .presentation_content_text {
-  margin-bottom: 1em;
-  margin-top: 1em;
+  margin-top: 0.5em;
+
 }
+
+.presentation_content_text {
+  margin-bottom: 1.5em;
+}
+
+
 
