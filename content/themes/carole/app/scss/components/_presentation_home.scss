@@ -1,0 +1,37 @@
+.presentation {
+  display: flex;
+  flex-direction: column;
+}
+
+.presentation_section {
+  display: flex;
+  flex-direction: column;
+  margin: 1.5em;
+
+  @media (min-width: $breakpoint-medium) {
+    flex-direction: row;     
+    }
+}
+
+.presentation_image,
+.presentation_content {
+  width: 100%;
+}
+.presentation_image{
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  height: 50vh;
+}
+
+.presentation_content {
+  display: flex;
+  flex-direction: column;
+}
+
+.presentation_content_title, 
+.presentation_content_text {
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+

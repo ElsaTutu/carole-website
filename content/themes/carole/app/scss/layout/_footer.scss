@@ -1,0 +1,15 @@
+.footer {
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   padding: 1em;
+   background-color: $color-bg-light;
+}
+
+.footer-menu, .footer-informations, .social-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

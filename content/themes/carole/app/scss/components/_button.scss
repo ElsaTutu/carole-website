@@ -1,0 +1,17 @@
+.presentation_content_button {
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  background-color: $color-button;
+  padding: 0.5em;
+  border: none;
+  border-radius: 5px;
+  transition-duration: 0.4s;
+  font-weight: bold;
+}
+
+.presentation_content_button:hover {
+  background-color: $color-button-hover;
+  color: $color-bg;
+}

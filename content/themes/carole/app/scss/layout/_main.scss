@@ -1,0 +1,8 @@
+.main {
+  margin-top: 50px; 
+
+  @media (min-width: $breakpoint-medium) {
+  margin-top: 100px; /* Add a top margin to avoid content overlay */      
+    }
+  
+}

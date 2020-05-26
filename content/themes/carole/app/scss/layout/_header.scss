@@ -1,0 +1,31 @@
+.header {
+  overflow: hidden;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  background-color: $color-bg-light;
+  
+  @media (min-width: $breakpoint-medium) {
+    display: flex;
+  justify-content: space-between; 
+  height: 10vh;      
+    }
+
+}
+
+#js-menu {
+  background-color: $color-bg-light;
+  height: 100vh;
+
+    @media (min-width: $breakpoint-medium) {
+    height: 0vh;      
+    }
+
+}
+
+.nav-links {
+  font-size: $font-size-large;
+  margin-bottom: 1em;
+}
+
+
