@@ -8,9 +8,7 @@ body {
         font-size: $font-size-medium;
     }
 
-    @media (min-width: $breakpoint-large) {
-        font-size: $font-size-large;
-    }
+   
 }
 
 body,
@@ -44,3 +42,4 @@ h2 {
     font-size: $font-size-medium;
     font-weight: bold;
 }
+

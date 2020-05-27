@@ -8,8 +8,14 @@
    background-color: $color-bg-light;
 }
 
-.footer-menu, .footer-informations, .social-nav {
+.footer-menu, 
+.footer-informations, 
+.social-nav {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  
+
+  @media (min-width: $breakpoint-medium) {
+
+    }
 }

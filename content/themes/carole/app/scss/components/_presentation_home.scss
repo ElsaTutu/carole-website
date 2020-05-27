@@ -5,6 +5,7 @@
 
   @media (min-width: $breakpoint-medium) {
     margin-bottom: 3em;
+    
     }
     
 }
@@ -21,12 +22,13 @@
     align-items: center; 
     height: 70vh;
 
+    // &:nth-child(2) :nth-child(2) {
+    //      order: -1;
+    //      background-color: grey;
+    //       }
     
      
-        //  &:nth-child(2n+0) {
-        //   background:rgb(241, 240, 240);
-          
-        //   }
+         
 
     }
 }
