@@ -2,13 +2,13 @@ var app = {
   init: function() {
     console.log('init');
   },
-  menubar: function(){
-    let mainNav = document.getElementById('js-menu');
-    let navBarToggle = document.getElementById('js-navbar-toggle');
-navBarToggle.addEventListener('click', function () {
+//   menubar: function(){
+//     let mainNav = document.getElementById('js-menu');
+//     let navBarToggle = document.getElementById('js-navbar-toggle');
+// navBarToggle.addEventListener('click', function () {
     
-    mainNav.classList.toggle('active');});
-  },
+//     mainNav.classList.toggle('active');});
+//   },
   
 };
 
@@ -70,4 +70,4 @@ var TxtType = function(el, toRotate, period) {
     };
 
 $(app.init);
-$(app.menubar);
+// $(app.menubar);

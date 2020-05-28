@@ -5,27 +5,19 @@
   width: 100%; /* Full width */
   z-index: 1;
   background-color: $color-bg-light;
+  display: flex;
+    justify-content: space-between; 
   
   @media (min-width: $breakpoint-medium) {
-    display: flex;
-    justify-content: space-between; 
     height: 8vh;      
     }
 
 }
 
-#js-menu {
-  background-color: $color-bg-light;
-  height: 100vh;
 
-    @media (min-width: $breakpoint-medium) {
-    height: 0vh;     
-    }
-
-}
-
-.nav-links {
-  margin-bottom: 1em;
+.logo {
+  
+  
 }
 
 

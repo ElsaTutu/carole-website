@@ -12,47 +12,42 @@
   <header class="header sticky">
     <div class="logo">
       <img src="#" alt="" class="logo_image">
+      
       <p class="logo_text">Carole Guidon</p>
     </div>
 
-    <!-- main navigation + burger menu on mobile phone -->
-    <div class="menu">
-      
-        <nav class="navbar stroke">
-          <span class="navbar-toggle" id="js-navbar-toggle">
-            <i class="fa fa-bars"></i>
-        </span>
-        
-        <ul class="main-nav stroke" id="js-menu">
-              <li>
-                  <a href="#" class="nav-links">Accueil</a>
-              </li>
-              <li>
-                  <a href="#" class="nav-links">Prestations</a>
-              </li>
-              <li>
-                  <a href="#" class="nav-links">Tarifs</a>
-              </li>
-              <li>
-                  <a href="#" class="nav-links">Contact Us</a>
-              </li>
-              <li>
-                  <a href="#" class="nav-links">Portfolio</a>
-              </li>
-              <li>
-                  <a href="#" class="nav-links">Blog</a>
-              </li>
-              <li>
-                  <a href="#" class="nav-links">A propos</a>
-              </li>
-              <li>
-                  <a href="#" class="nav-links">Contact</a>
-              </li>
-          </ul>
-        </nav>
-
-        
-    </div>
+  <div class="main-menu-toggle">
+      <a href="#main-menu"
+      id="main-menu-toggle"
+      class="menu-toggle"
+      aria-label="Open main menu">
+      <span class="sr-only">Open main menu</span>
+      <span class="fa fa-bars" aria-hidden="true"></span>
+    </a>
+  </div>
+  
+  
+  <nav id="main-menu" class="main-menu" aria-label="Main menu">
+    <a href="#main-menu-toggle"
+       id="main-menu-close"
+       class="menu-close"
+       aria-label="Close main menu">
+      <span class="sr-only">Close main menu</span>
+      <span class="fa fa-close" aria-hidden="true"></span>
+    </a>
+    <ul>
+      <li><a href="#">Accueil</a></li>
+      <li><a href="#">Prestations</a></li>
+      <li><a href="#">Tarifs</a></li>
+      <li><a href="#">A propos</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Blog</a></li>
+    </ul>
+  </nav>
+  <a href="#main-menu-toggle"
+     class="backdrop"
+     tabindex="-1"
+     aria-hidden="true" hidden></a>
 
   </header>
 
@@ -135,8 +130,16 @@
           <p class="grid__item__content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nobis ipsa eligendi, quae quibusdam totam autem accusantium? Quaerat expedita in similique accusantium qui maxime impedit et! Facilis nostrum nobis quisquam?</p>
         </div>
     </section>
-    
 
+    <div class="search-bar">
+      <form method="get" action="#">
+        <div class="text-center">
+      <input type="text" id="search" placeholder="recherche">
+            <i class="fa fa-search" aria-hidden="true"></i>
+          
+    </div>
+      </form>
+    </div>
 
   </main>
 
