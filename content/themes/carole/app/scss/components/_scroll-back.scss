@@ -12,7 +12,7 @@
     transform: rotate(270deg);
     position: relative;
     background-color: $color-bg-light;
-    color: #555;
+    color:$middle-grey;
     text-align: center;
     font-size: 40px;
     text-decoration: none;
@@ -20,12 +20,13 @@
     border-radius: 10%;
 
     @media (min-width: $breakpoint-medium) {
-      font-size: 50px;
+      font-size: 40px;
+      width: 50px;
     }
     
 }
 #back2Top:hover {
-    background-color: $color-bg-dark-grey;
+    background-color: $color-bg;
     color: $color-text;
 }
 
