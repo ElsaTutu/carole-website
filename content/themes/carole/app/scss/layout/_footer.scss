@@ -3,18 +3,23 @@
    bottom: 0;
    width: 100%;
    display: flex;
-   justify-content: space-between;
+  //  justify-content: space-around;
    flex-direction: column;
    padding: 1em;
    background-color: $color-bg-light;
+   margin-left: auto;
+   margin-right: auto;
 }
 
 .footer-menu, 
 .footer-informations, 
 .social-nav {
   display: flex;
-  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
   width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   
 
   @media (min-width: $breakpoint-medium) {

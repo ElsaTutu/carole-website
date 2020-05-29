@@ -2,16 +2,9 @@ var app = {
   init: function() {
     console.log('init');
   },
-//   menubar: function(){
-//     let mainNav = document.getElementById('js-menu');
-//     let navBarToggle = document.getElementById('js-navbar-toggle');
-// navBarToggle.addEventListener('click', function () {
-    
-//     mainNav.classList.toggle('active');});
-//   },
-  
 };
 
+// burger menu
 var TxtType = function(el, toRotate, period) {
         this.toRotate = toRotate;
         this.el = el;
@@ -68,6 +61,26 @@ var TxtType = function(el, toRotate, period) {
         css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
         document.body.appendChild(css);
     };
+
+    /*Scroll to top when arrow up clicked BEGIN*/
+$(window).scroll(function() {
+    var height = $(window).scrollTop();
+    if (height > 100) {
+        $('#back2Top').fadeIn();
+    } else {
+        $('#back2Top').fadeOut();
+    }
+});
+$(document).ready(function() {
+    $("#back2Top").click(function(event) {
+        event.preventDefault();
+        $("html, body").animate({ scrollTop: 0 }, "slow");
+        return false;
+    });
+
+});
+ /*Scroll to top when arrow up clicked END*/
+
 
 $(app.init);
 // $(app.menubar);
