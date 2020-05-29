@@ -20,22 +20,32 @@ $white: #FFF;
 $black: #000;
 $brown: #c77c2b;
 $orange: #F9A146;
-$grey: rgb(240, 238, 238);
-$dark-grey: rgb(177, 176, 176);
+$grey: rgb(243, 243, 243);
+$dark-grey: rgb(216, 214, 214);
 
-// $posts-bg-colors: (
-//     1:#7BC5DE,
 
-// );
-
+// text
 $color-text: $black;
-$color-bg: $white;
 $color-title: $orange;
+
+// effect
+$black-shadow: $grey;
+$toggle-color: $orange;
+
+// button
 $color-button: $orange;
-$color-button-hover: $brown;
-$color-brand: $brown;
+$color-button-hover: $black;
+
+//Backgrounds
+$color-bg: $white;
 $color-bg-light: $grey;
-$black-shadow: $dark-grey;
+$color-bg-dark: $black;
+$color-bg-dark-grey: $dark-grey;
+
+
+$color-brand: $brown;
+
+
 
 /*header*/
 

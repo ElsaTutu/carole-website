@@ -4,6 +4,7 @@
    width: 100%;
    display: flex;
    justify-content: space-between;
+   flex-direction: column;
    padding: 1em;
    background-color: $color-bg-light;
 }
@@ -13,6 +14,7 @@
 .social-nav {
   display: flex;
   flex-direction: row;
+  width: 100%;
   
 
   @media (min-width: $breakpoint-medium) {
