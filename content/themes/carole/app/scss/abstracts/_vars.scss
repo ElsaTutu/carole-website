@@ -20,6 +20,7 @@ $white: #FFF;
 $black: #000;
 $brown: #c77c2b;
 $orange: #F9A146;
+$orange-transparent:  rgba(249, 162, 70, 0.438);
 $grey: rgb(243, 243, 243);
 $dark-grey: rgb(216, 214, 214);
 $middle-grey: rgb(177, 176, 176);
@@ -32,14 +33,17 @@ $color-title: $orange;
 // effect
 $black-shadow: $dark-grey;
 $toggle-color: $orange;
+$header-box-shadow: $orange-transparent;
+$footer-bg: $grey;
 
 // button
 $color-button: $orange;
 $color-button-hover: $black;
+$icons: $black;
 
 //Backgrounds
 $color-bg: $white;
-$color-bg-light: $grey;
+$color-bg-light: $white;
 $color-bg-dark: $black;
 $color-bg-dark-grey: $dark-grey;
 

@@ -7,9 +7,11 @@
   background-color: $color-bg-light;
   display: flex;
   justify-content: space-between; 
+  box-shadow: 0 1px 2px $header-box-shadow; 
   
   @media (min-width: $breakpoint-medium) {
-    height: 8vh;      
+    height: 8vh; 
+        
     }
 
 }
@@ -21,8 +23,6 @@
   @media (min-width: $breakpoint-medium) {
     margin-left: 2em;    
     }
-  
-  
 }
 
 

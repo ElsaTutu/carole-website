@@ -1,9 +1,9 @@
 .main {
-  margin-top: 50px; 
+  margin-top: 4em; 
   width: 100%;
 
   @media (min-width: $breakpoint-medium) {
-  margin-top: 100px; /* Add a top margin to avoid content overlay */      
+  margin-top: 110px; /* Add a top margin to avoid content overlay */      
     }
   
 }

@@ -2,48 +2,52 @@
    width: 100%;
    display: flex;
    flex-direction: column; 
-   background-color: $color-bg-light;
+   background-color: $footer-bg;
 
   @media (min-width: $breakpoint-medium) {
-    flex-direction: row; 
-    // padding: 1em;
-    
-}
-   
+    flex-direction: row;  
+} 
 }
 
 .footer{
   @media (min-width: $breakpoint-medium) {
     display: flex;
     width: 100%;
-
-    // justify-content: space-around;
     align-content: space-around;
-}
+     position: absolute;
+  // right: 0;
+  // bottom: 0;
+  // left: 0;
 
+}
 }
 
 .footer-menu-nav li, 
 .social-nav li {
   display: inline-flex;
   flex-direction: row;
-  margin-left: 1em;
-  margin-right: 1em;
+  margin-left: 0.5em;
+  // margin-right: 1em;
 
   @media (min-width: $breakpoint-medium) {
-    display: inline-flex;
-    flex-direction: row;
+    // display: inline-flex;
+    // flex-direction: row;
 
   }
   
 }
 
+nav .footer-menu-nav {
+  display: flex;
+}
+
 .footer-menu, 
 .social-nav {
   @media (min-width: $breakpoint-medium) {
-    display: inline-flex;
-    flex-direction: row;
-    width: 33%;
+    // display: inline-flex;
+    // flex-direction: row;
+    width: 40%;
+    // display: flex;
 
   }
 
@@ -52,7 +56,13 @@
 .footer-informations {
   display: flex;
   text-align: center;
-  
+}
+
+.footer-menu-nav {
+  @media (min-width: $breakpoint-medium) {
+    width: 500px;
+    
+  }
 }
 
 .footer-informations,
@@ -64,28 +74,41 @@
   margin-bottom: 1em;
 
   @media (min-width: $breakpoint-medium) {
-      display: inline-block;
-      
-      
+      display: inline-block;     
   }
-
-  
-
 }
 
 .footer-menu-nav  a {
   text-transform: uppercase;
-  text-decoration: underline;
-
+  font-size: 0.7em;
+  
   @media (min-width: $breakpoint-medium) {
-text-decoration: none;
+    text-decoration: none;
+    font-size: 0.9em;
   }
 }
 
 .footer-menu-nav a:hover,
-.link-linkedin:hover {
+.link-linkedin:hover ,
+.social-nav a:hover{
+    @media (min-width: $breakpoint-medium) {
+      text-decoration: none;
+      color: $toggle-color;
+  }
+}
+
+.social-nav{
   @media (min-width: $breakpoint-medium) {
-text-decoration: none;
-color: $toggle-color;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2em;
+  }
+}
+
+.footer-menu-nav{
+  @media (min-width: $breakpoint-medium) {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 2em;
   }
 }

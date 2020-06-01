@@ -1,0 +1,112 @@
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid $black-shadow;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=email], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid $black-shadow;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+
+  cursor: pointer;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  background-color: $color-button;
+  padding: 0.5em;
+  border: none;
+  border-radius: 5px;
+  transition-duration: 0.4s;
+  font-weight: bold;
+  color: $color-bg;
+  box-shadow: 2px 2px 2px 2px $black-shadow;
+}
+
+
+input[type=submit]:hover {
+  background-color: $black-shadow;
+  color: $color-button-hover
+}
+
+/* Style the container/contact section */
+.contact {
+  border-radius: 5px;
+  // background-color: $dark-grey;
+  padding: 10px;
+  height: 80vh;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+
+//right part
+.contact-info {
+
+    &__part {
+        border-bottom: 1px solid lighten ($color-button, 30);
+        padding: 1em;
+        position: relative;
+
+        &:last-child {
+            border:none;
+        }
+
+        .fa {
+            position: absolute;
+            color: lighten($icons, 30);
+            
+        }
+
+        &__label {
+            margin-left: 2.5em;
+            margin-bottom: 0.5em;
+            font-weight: bold;
+            font-size: 1.5em;
+        }
+
+        &__content {
+            margin-left: 3em;
+            font-size: 1em;
+            color: lighten($color-text, 30);
+            font-weight: bold;
+
+            &.is-email {
+                color: $color-text;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
