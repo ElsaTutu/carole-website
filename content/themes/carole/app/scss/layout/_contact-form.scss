@@ -1,5 +1,9 @@
 /* Style inputs */
-input[type=text], select, textarea {
+.contact-form{
+  display: flex;
+  flex-direction: column;
+  
+  input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid $black-shadow;
@@ -18,12 +22,13 @@ input[type=email], select, textarea {
 }
 
 input[type=submit] {
-
+  
   cursor: pointer;
   width: 150px;
   display: flex;
   justify-content: center;
   align-self: center;
+  align-items: center;
   background-color: $color-button;
   padding: 0.5em;
   border: none;
@@ -39,6 +44,8 @@ input[type=submit]:hover {
   background-color: $black-shadow;
   color: $color-button-hover
 }
+}
+
 
 /* Style the container/contact section */
 .contact {

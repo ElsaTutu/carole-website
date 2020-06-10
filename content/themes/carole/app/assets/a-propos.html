@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carole Guidon</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <header class="header sticky">
+    <div class="logo">
+      <img src="#" alt="" class="logo_image">
+      
+      <p class="logo_text">Carole Guidon</p>
+    </div>
+
+  <div class="main-menu-toggle">
+      <a href="#main-menu"
+      id="main-menu-toggle"
+      class="menu-toggle"
+      aria-label="Open main menu">
+      <span class="sr-only">Open main menu</span>
+      <span class="fa fa-bars" aria-hidden="true"></span>
+    </a>
+  </div>
+  
+  
+  <nav id="main-menu" class="main-menu" aria-label="Main menu">
+    <a href="#main-menu-toggle"
+       id="main-menu-close"
+       class="menu-close"
+       aria-label="Close main menu">
+      <span class="sr-only">Close main menu</span>
+      <span class="fa fa-close" aria-hidden="true"></span>
+    </a>
+    <ul>
+      <li><a href="#">Accueil</a></li>
+      <li><a href="#">Prestations</a></li>
+      <li><a href="#">Tarifs</a></li>
+      <li><a href="#">A propos</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Blog</a></li>
+    </ul>
+  </nav>
+  <a href="#main-menu-toggle"
+     class="backdrop"
+     tabindex="-1"
+     aria-hidden="true" hidden></a>
+
+  </header>
+
+  <main class="main">
+
+    <section class="presentation" id="presentation">
+      <div class="presentation_section">
+        <div class="presentation_image" style="background-image: url('/images/writing.jpg');"></div>
+        <div class="presentation_content">
+          <h1 class="presentation_content_title">Titre</h1>
+          <p class="presentation_content_text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consequat ligula feugiat, fringilla sapien interdum, volutpat orci. Phasellus vestibulum nisl nunc, nec vestibulum lectus imperdiet ac. Nullam consectetur laoreet placerat. Etiam sit amet diam sit amet dui lacinia vulputate. Integer a vehicula sapien, vel euismod nisl. Praesent non imperdiet turpis. Suspendisse bibendum quis nunc et pellentesque.</p>
+          
+          
+        </div>
+      </div>
+
+      <div class="presentation_section">
+        <div class="presentation_image" style="background-image: url('/images/writing.jpg');"></div>
+        <div class="presentation_content">
+          <h1 class="presentation_content_title">Titre</h1>
+          <p class="presentation_content_text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer consequat ligula feugiat, fringilla sapien interdum, volutpat orci. Phasellus vestibulum nisl nunc, nec vestibulum lectus imperdiet ac. Nullam consectetur laoreet placerat. Etiam sit amet diam sit amet dui lacinia vulputate. Integer a vehicula sapien, vel euismod nisl. Praesent non imperdiet turpis. Suspendisse bibendum quis nunc et pellentesque.</p>
+          
+        </div>
+      </div>
+    </section>
+
+    <section class="faq">
+      <h2 class="faq-main-title">Les questions fréquentes</h2>
+        <ul class="faq-ul">
+          <li class="faq-li">
+            <input type="checkbox" checked class="faq-input">
+            <i class="faq-icon"></i>
+            <h3 class="faq-question-title">1 ère question</h3>
+            <p class="faq-answer">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum tenetur vitae, distinctio aliquam vel inventore sit enim corrupti dolor possimus corporis quis in ipsam, nulla animi esse eos harum soluta?</p>
+          </li>
+          <li class="faq-li">
+            <input type="checkbox" checked class="faq-input">
+            <i class="faq-icon"></i>
+            <h3 class="faq-question-title">2ème question</h3>
+            <p class="faq-answer">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam cumque quisquam odit placeat ex consectetur, non rerum hic adipisci magni vitae deleniti iusto, est ab commodi, voluptatibus necessitatibus sequi corporis?</p>
+          </li>
+          <li class="faq-li">
+            <input type="checkbox" checked class="faq-input">
+            <i class="faq-icon"></i>
+            <h3 class="faq-question-title">3ème question</h3>
+            <p class="faq-answer">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsa voluptate illo sint doloremque quidem maxime saepe cumque dolor omnis dolores laborum atque id quasi quibusdam vero eveniet aut, fugiat cum!</p>
+          </li>
+        </ul>
+    </section>
+
+    
+
+    
+  </main>
+
+  <footer class="footer">
+
+        <div class="footer-menu">
+          <nav id="footer-menu-nav" class="footer-menu-nav" aria-label="Main menu">
+          <ul>
+            <li><a href="#">Mentions Légales - </a></li> 
+            
+            <li><a href="#">Politique de confidentialité</a></li>
+          </ul>
+          </nav>
+        </div>
+
+        <div class="footer-informations">
+            <div class="footer-informations_website-name">
+              <p>© Carole Guidon - 2020</p>
+            </div>
+            <div class="footer-informations_date">
+              <p>Tous droits réservés. Site fait avec ❤︎ par <a href="#" class="link-linkedin"> Elsa Tutu</a></p>
+            </div>
+
+        </div>
+
+      <div class="social-nav">
+          <ul>
+              <li>
+                <a href="#">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+      </div>
+
+
+    
+  </footer>
+  
+  <script src="js/app.js"></script>
+</body>
+</html>
