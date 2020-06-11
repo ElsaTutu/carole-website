@@ -17,6 +17,7 @@ $font-family-fallback: 'Helvetica', Arial, sans-serif;
 
 // Couleurs
 $white: #FFF;
+$white-transparent: rgba(255, 255, 255, 0.466);
 $black: #000;
 $brown: #c77c2b;
 $orange: #F9A146;
@@ -25,11 +26,13 @@ $grey: rgb(243, 243, 243);
 $dark-grey: rgb(216, 214, 214);
 $grey-clear: rgb(236, 232, 232);
 $middle-grey: rgb(177, 176, 176);
+$strong-grey: rgb(122, 121, 121);
 
 
 // text
 $color-text: $black;
 $color-title: $orange;
+$text-text-white: $white;
 
 // effect
 $black-shadow: $dark-grey;
@@ -42,8 +45,13 @@ $color-button: $orange;
 $color-button-hover: $black;
 $icons: $black;
 
+// dots for blog
+$dot-selected: $strong-grey;
+$dot-unselected: $dark-grey;
+
 //Backgrounds
 $color-bg: $white;
+$color-bg-transparent: $white-transparent;
 $color-bg-light: $white;
 $color-bg-dark: $black;
 $color-bg-scroll-top: $grey-clear;

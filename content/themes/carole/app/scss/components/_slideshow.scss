@@ -1,0 +1,87 @@
+/* Slideshow container W3school*/
+.slideshow-container {
+  width: 100%;
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.slider{
+  margin: 0.5em;
+}
+
+/* Caption text */
+.text_mySlides {
+  background-color: $color-bg-transparent;
+  color: $color-text;
+  font-size: 15px;
+  padding: 1em 2em;
+  position: absolute;
+  bottom: 1em;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title_mySlides {
+  font-weight: bold;
+  font-size: $font-size-medium;
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: $dot-unselected;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+
+.active {
+  background-color: $dot-selected;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text_mySlides {font-size: 11px}
+}
+
+.image_mySlides{
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  height: 50vh;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  border-radius: 0.5em;
+
+  @media (min-width: $breakpoint-medium) {
+    margin: 1em;
+    }
+}
+
