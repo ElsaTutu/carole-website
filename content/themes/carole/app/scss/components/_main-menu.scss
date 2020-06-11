@@ -75,8 +75,8 @@ box-shadow 0.3s ease;
   margin-top: 1em;
 }
 
-.main-menu li:first-child a {
-  border-top: 1px solid $toggle-color;
+#main-menu-close{
+  border-bottom: $white;
 }
 
 // .main-menu a:hover,

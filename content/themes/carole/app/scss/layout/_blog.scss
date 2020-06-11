@@ -24,7 +24,12 @@
   align-items: center;
   @media (min-width: $breakpoint-medium) {
       width: 25%;
-      padding-top: 5em;
+      padding-top: 0em;
+      position: fixed;
+      right: 0;
+      align-items: flex-start;
     }
 }
+
+
 
