@@ -1,80 +1,90 @@
-//https://codepen.io/delpher/pen/rrLWEq
+
 .name_presentation{
   display: none;
   @media (min-width: $breakpoint-medium){
     display: block;
-  color: $name-grey-base;
+  color: $color-text;
   display: flex;
   flex-direction: column;
   align-items: center;
   }
   
 }
-.text {
-  @media (min-width: $breakpoint-medium){
-    display: flex;
-  justify-content: center;
-  margin-top: 0.5em;
-  padding: 0 1em 0 1em;
-  // transform: translateY(-50%);
-  text-align: center;
-  transition: transform .3s ease-in-out;
-  }
 
-  
-  
-  &:hover {
-    @media (min-width: $breakpoint-medium){
-    transform: rotateX(35deg), translateY(-50%); 
-  }
-      
-    span {
-      @media (min-width: $breakpoint-medium){
-    
-  }
-      color: #ccc;
-      &:nth-child(odd) {
-        @media (min-width: $breakpoint-medium){
-    transform: skewY(15deg);
-  }
-              
-        
-      }
-      &:nth-child(even) {
-        @media (min-width: $breakpoint-medium){
-    transform: skewY(-15deg);      
-        background-color: #f9f9f9;
-        color: $name-grey-strong;
-  }
-        
-        
-      }
-    }
-  }
-  
-  > span {
-    @media (min-width: $breakpoint-medium){
-    display: block;
-    background-color: #fff;
-    width: 120px;
-    height: 120px;
-    line-height: 120px;
-    transition: transform .3s ease-in-out, color .3s ease-in-out, background-color .3s ease-in-out;
-    box-shadow: 0 40px 50px rgba(0,0,0,0.1);
-    &:first-child {
-      border-radius: 5px 0 0 5px;
-    }
-  }
-    
+//https://codepen.io/AbubakerSaeed/pen/abzWqPb
+/* block-$ */
+.block-effect {
+  font-size: calc(8px + 6vw);
+  margin-top: 0.5em;
+}
+
+.block-reveal {
+  --t: calc(var(--td) + var(--d));
+
+  color: transparent;
+  padding: 4px;
+
+  position: relative;
+  overflow: hidden;
+
+  animation: revealBlock 0s var(--t) forwards;
+}
+
+.block-reveal::after {
+  content: '';
+
+  width: 0%;
+  height: 100%;
+  padding-bottom: 4px;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  background: var(--bc);
+  animation: revealingIn var(--td) var(--d) forwards, revealingOut var(--td) var(--t) forwards;
+}
+
+
+/* animations */
+@keyframes revealBlock {
+  100% {
+    color: #0f0f0f;
   }
 }
 
+@keyframes revealingIn {
+
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes revealingOut {
+
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+
+}
+
+
+
 // partie rédaction web
+//https://codepen.io/RickyMarou/pen/dyoMXYR
 .text_work_div {
   cursor: pointer;
   position: relative;
   display: inline-block;
-  font-size: 3rem;
+  font-size: 3.5rem;
   background: linear-gradient(to bottom, #000, #000 60%, #fff 60%, #fff 100%);
   background-clip: text;
   -webkit-background-clip: text;

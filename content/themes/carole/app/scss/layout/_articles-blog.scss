@@ -4,7 +4,9 @@
   justify-content: center;
 
   @media (min-width: $breakpoint-medium) {
-    padding: 1em;
+    display: flex;
+  justify-content: center;
+    padding: 0.5em 0.5em 0em 0.5em;
     font-size: $font-size-large;
   }
 }
