@@ -17,11 +17,13 @@
     font-size: 40px;
     text-decoration: none;
     padding: 0.2em;
+    
     border-radius: 10%;
 
     @media (min-width: $breakpoint-medium) {
       font-size: 40px;
       width: 50px;
+      
     }
     
 }
@@ -32,4 +34,8 @@
 .scroll-back {
   margin-left: 1em;
   margin-bottom: 1.5em;
+
+  @media (min-width: $breakpoint-medium){
+    // margin-bottom: 7em;
+  }
 }

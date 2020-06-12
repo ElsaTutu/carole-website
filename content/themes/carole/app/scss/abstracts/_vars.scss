@@ -34,18 +34,24 @@ $white-transparent: rgba(255, 255, 255, 0.466);
 $black: #000;
 $brown: #c77c2b;
 $orange: #F9A146;
-$orange-transparent:  rgba(249, 162, 70, 0.438);
+$orange-transparent:  rgba(249, 162, 70, 0.61);
 $grey: rgb(243, 243, 243);
 $dark-grey: rgb(216, 214, 214);
 $grey-clear: rgb(236, 232, 232);
 $middle-grey: rgb(177, 176, 176);
 $strong-grey: rgb(122, 121, 121);
 
+$name-grey-base: #aaa;
+$name-grey-strong: rgb(119, 117, 117);
+
 
 // text
 $color-text: $black;
 $color-title: $orange;
 $text-text-white: $white;
+$color-presentation-name: $dark-grey;
+$color-presentation-name-hover-light: #f9a246a2;
+$color-presentation-name-hover-dark: #F9A146;
 
 // effect
 $black-shadow: $dark-grey;

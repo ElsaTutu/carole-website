@@ -116,13 +116,15 @@
 
   @media (min-width: $breakpoint-medium) {
     padding: 0 3em 2em 3em;
+    position: relative;
     }
 }
 .faq-main-title {
   display: flex;
   justify-content: center;
-  margin: 1em;
+  margin: 0 1em 1em 1em;
   font-size: $font-size-large;
+
 }
 
 .faq-answer {

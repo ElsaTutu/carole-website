@@ -1,0 +1,109 @@
+//https://codepen.io/delpher/pen/rrLWEq
+.name_presentation{
+  display: none;
+  @media (min-width: $breakpoint-medium){
+    display: block;
+  color: $name-grey-base;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+  
+}
+.text {
+  @media (min-width: $breakpoint-medium){
+    display: flex;
+  justify-content: center;
+  margin-top: 0.5em;
+  padding: 0 1em 0 1em;
+  // transform: translateY(-50%);
+  text-align: center;
+  transition: transform .3s ease-in-out;
+  }
+
+  
+  
+  &:hover {
+    @media (min-width: $breakpoint-medium){
+    transform: rotateX(35deg), translateY(-50%); 
+  }
+      
+    span {
+      @media (min-width: $breakpoint-medium){
+    
+  }
+      color: #ccc;
+      &:nth-child(odd) {
+        @media (min-width: $breakpoint-medium){
+    transform: skewY(15deg);
+  }
+              
+        
+      }
+      &:nth-child(even) {
+        @media (min-width: $breakpoint-medium){
+    transform: skewY(-15deg);      
+        background-color: #f9f9f9;
+        color: $name-grey-strong;
+  }
+        
+        
+      }
+    }
+  }
+  
+  > span {
+    @media (min-width: $breakpoint-medium){
+    display: block;
+    background-color: #fff;
+    width: 120px;
+    height: 120px;
+    line-height: 120px;
+    transition: transform .3s ease-in-out, color .3s ease-in-out, background-color .3s ease-in-out;
+    box-shadow: 0 40px 50px rgba(0,0,0,0.1);
+    &:first-child {
+      border-radius: 5px 0 0 5px;
+    }
+  }
+    
+  }
+}
+
+// partie rédaction web
+.text_work_div {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  font-size: 3rem;
+  background: linear-gradient(to bottom, #000, #000 60%, #fff 60%, #fff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-repeat: no-repeat;
+  transition: background 0.2s ease-out;
+  white-space: nowrap;
+}
+
+.text_work_span {
+  position: relative;
+}
+
+.text_work_span:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 15px;
+  background: #000;
+  bottom: 0px;
+  transition: all 0.2s ease-out;
+}
+
+.text_work_div:hover {
+  background-position: 0 20px;
+  
+}
+
+.text_work_span:hover:before {
+  transform: translateY(20px)
+}

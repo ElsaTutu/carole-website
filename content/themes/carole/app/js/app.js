@@ -22,6 +22,8 @@ var app = {
     dots[slideIndex-1].className += " active";
     setTimeout(showSlides, 5000); // Change image every 5 seconds
     }
+
+    
   },
 };
 
@@ -102,7 +104,8 @@ var TxtType = function(el, toRotate, period) {
 
         });
         
-        // slideshow
+        // presentation work home_page
+        
         
                 
 
