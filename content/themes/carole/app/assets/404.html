@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carole Guidon</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <header class="header sticky">
+    <div class="logo">
+      <img src="#" alt="" class="logo_image">
+      
+      <p class="logo_text">Carole Guidon</p>
+    </div>
+
+  <div class="main-menu-toggle">
+      <a href="#main-menu"
+      id="main-menu-toggle"
+      class="menu-toggle"
+      aria-label="Open main menu">
+      <span class="sr-only">Open main menu</span>
+      <span class="fa fa-bars" aria-hidden="true"></span>
+    </a>
+  </div>
+  
+  
+  <nav id="main-menu" class="main-menu" aria-label="Main menu">
+    <a href="#main-menu-toggle"
+       id="main-menu-close"
+       class="menu-close"
+       aria-label="Close main menu">
+      <span class="sr-only">Close main menu</span>
+      <span class="fa fa-close" aria-hidden="true"></span>
+    </a>
+    <ul>
+      <li><a href="#">Accueil</a></li>
+      <li><a href="#">Prestations</a></li>
+      <li><a href="#">Tarifs</a></li>
+      <li><a href="#">A propos</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Blog</a></li>
+    </ul>
+  </nav>
+  <a href="#main-menu-toggle"
+     class="backdrop"
+     tabindex="-1"
+     aria-hidden="true" hidden></a>
+
+  </header>
+
+  <main class="main">
+    <div class="error_page">
+       <div id="error_page_clouds clouds">
+            <div class="cloud x1"></div>
+            <div class="cloud x1_5"></div>
+            <div class="cloud x2"></div>
+            <div class="cloud x3"></div>
+            <div class="cloud x4"></div>
+            <div class="cloud x5"></div>
+        </div>
+        <div class="error_page_text">
+            <div class="_404">404</div>
+            <hr>
+            <div class="_1">La page que vous cherchez</div>
+            <div class="_2">n'est plus ici</div>
+            <a class="error_page_button" href="#">Retourner à l'accueil</a>
+        </div>
+    </div>
+    
+  </main>
+
+  <footer class="footer">
+
+        <div class="footer-menu">
+          <nav id="footer-menu-nav" class="footer-menu-nav" aria-label="Main menu">
+          <ul>
+            <li><a href="#">Mentions Légales - </a></li> 
+            
+            <li><a href="#">Politique de confidentialité</a></li>
+          </ul>
+          </nav>
+        </div>
+
+        <div class="footer-informations">
+            <div class="footer-informations_website-name">
+              <p>© Carole Guidon - 2020</p>
+            </div>
+            <div class="footer-informations_date">
+              <p>Tous droits réservés. Site fait avec ❤︎ par <a href="#" class="link-linkedin"> Elsa Tutu</a></p>
+            </div>
+
+        </div>
+
+      <div class="social-nav">
+          <ul>
+              <li>
+                <a href="#">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+      </div>
+
+
+    
+  </footer>
+  
+  <script src="js/app.js"></script>
+</body>
+</html>

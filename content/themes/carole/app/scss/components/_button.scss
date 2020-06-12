@@ -3,17 +3,17 @@
   display: flex;
   justify-content: center;
   align-self: center;
-  background-color: $color-button;
+  // background-color: $color-button;
   padding: 0.5em;
   border: none;
   border-radius: 5px;
   transition-duration: 0.4s;
   font-weight: bold;
-  color: $color-bg;
+  color: $color-text;
   box-shadow: 2px 2px 2px 2px $black-shadow;
 }
 
 .presentation_content_button:hover {
-  background-color: $black-shadow;
+  background-color: $color-button;
   color: $color-button-hover
 }

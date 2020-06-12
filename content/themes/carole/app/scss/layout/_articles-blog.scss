@@ -18,15 +18,15 @@
 }
 
 .news-card {
-  border: 0px solid aqua;
+  // border: 0px solid aqua;
   margin: 0.5rem;
   position: relative;
   height: 12rem;
   overflow: hidden;
-  border-radius: 0.5rem;
+  border-radius: 0.2rem;
   flex: 1;
   min-width: 290px;
-  box-shadow: 0 0 1rem $color-bg-dark;
+  box-shadow: 0 0 0.5rem $color-bg-dark;
   -webkit-backface-visibility: hidden;
   -moz-backface-visibility: hidden;
   -webkit-transform: translate3d(0, 0, 0);

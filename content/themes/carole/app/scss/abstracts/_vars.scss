@@ -11,11 +11,22 @@ $font-size: 16px;
 $font-size-medium: 18px;
 $font-size-large: 30px;
 
+//Font for 404 page
+$font-404: 202px;
+$font-404-mobile: 40px;
+$font-404-text: 4em;
+$font-404-text-mobile: 1.5em;
+$font-404-text-subtitle: 20px;
+$font-404-text-subtitle-mobile: 1em;
+$font-404-button: 25px;
+$font-404-button-mobile: 20px;
+
 $font-family-content: 'Roboto', sans-serif;
 $font-family-title: 'Roboto slab', serif;
 $font-family-fallback: 'Helvetica', Arial, sans-serif;
 
 $letter-spacing-title: 3px;
+$letter-spacing-404: 15px;
 
 // Couleurs
 $white: #FFF;
