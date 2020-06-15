@@ -1,19 +1,66 @@
 .presentation_content_button {
-  width: 150px;
+  width: 250px;
   display: flex;
   justify-content: center;
   align-self: center;
-  // background-color: $color-button;
-  padding: 0.5em;
+  // // background-color: $color-button;
+  // padding: 0.5em;
+  // border: none;
+  // border-radius: 5px;
+  // transition-duration: 0.4s;
+  // font-weight: bold;
+  // color: $color-text;
+  // box-shadow: 2px 2px 2px 2px $black-shadow;
+
+  position: relative;
+  padding: 1em 1.5em;
   border: none;
-  border-radius: 5px;
-  transition-duration: 0.4s;
-  font-weight: bold;
-  color: $color-text;
-  box-shadow: 2px 2px 2px 2px $black-shadow;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  font-size: 18px;
+  margin: 1em 0.8em;
 }
 
-.presentation_content_button:hover {
-  background-color: $color-button;
-  color: $color-button-hover
+// 
+// .presentation_content_button:hover {
+//   background-color: $color-button;
+//   color: $color-button-hover
+// }
+
+//https://codepen.io/emanuelgsouza/pen/YVJOZo
+.presentation_content_button {
+  color: #435a6b;
+}
+.presentation_content_button::after, .presentation_content_button::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20%;
+  height: 20%;
+  border: 2px solid;
+  transition: all 0.6s ease;
+  border-radius: 2px;
+  
+}
+.presentation_content_button::after {
+  bottom: 0;
+  right: 0;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: #435a6b;
+  border-right-color: #435a6b;
+}
+.presentation_content_button::before {
+  top: 0;
+  left: 0;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+  border-top-color: #435a6b;
+  border-left-color: #435a6b;
+}
+.presentation_content_button:hover:after, .presentation_content_button:hover:before {
+  border-color: #435a6b;
+  width: 100%;
+  height: 100%;
 }

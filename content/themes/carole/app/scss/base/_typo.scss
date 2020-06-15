@@ -3,7 +3,8 @@
 html,
 body {
     font-size: $font-size;
-    line-height: 1.6;
+    line-height: 2;
+    letter-spacing: 1px;
     @media (min-width: $breakpoint-medium) {
         font-size: $font-size-medium;
     }
@@ -42,4 +43,3 @@ h2 {
     font-size: $font-size-medium;
     font-weight: bold;
 }
-

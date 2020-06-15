@@ -44,8 +44,6 @@
   left: -200px;
   top: 0;
   height: 100%;
-//   overflow-y: scroll;
-//   overflow-x: visible;
   transition: left 1s ease,
 box-shadow 0.3s ease;
   z-index: 999;
@@ -82,11 +80,6 @@ box-shadow 0.3s ease;
   border-bottom: $white;
 }
 
-// .main-menu a:hover,
-// .main-menu a:focus {
-//   background: $dark-grey;
-//   text-decoration: underline;
-// }
 
 .main-menu .menu-close {
   position: absolute;
@@ -100,25 +93,6 @@ box-shadow 0.3s ease;
   box-sizing: border-box;
 }
 
-
-
-// article {
-//   padding: 30px;
-//   width: 55em;
-//   font-size: 16px;
-//   line-height: 1.5em;
-// }
-
-// article h2 {
-//   font-weight: 500;
-//   font-size: 28px;
-// }
-
-//  .header {
-//   padding: 20px;
-//   display: flex;
-//   align-items: baseline;
-// }
 
 @media (min-width: $breakpoint-large) {
    
@@ -213,13 +187,12 @@ box-shadow 0.3s ease;
   }
   
   .main-menu a {
-    // color: #06c;
-    border: 0 !important; /* Remove borders from off-canvas styling */
+    border: 0 !important; 
   }
   
   .main-menu a:hover,
   .main-menu a:focus {
-    background: none; /* Remove background from off-canvas styling */
+    background: none; 
     color: $toggle-color;
   }
 }
@@ -235,10 +208,9 @@ box-shadow 0.3s ease;
         display: block;
         padding: 15px;
         text-decoration: none;
-        // color: $toggle-color;
         font-weight: 800;
         text-transform: uppercase;
-        // margin: 0 10px;
+
       }
         .main-menu,
         .main-menu:after,
@@ -295,6 +267,8 @@ nav.fill ul li a:hover:after {
   -moz-animation: fill 1s forwards;
   opacity: 1;
 }
+
+
 
 
 
