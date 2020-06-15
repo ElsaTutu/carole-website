@@ -7,6 +7,7 @@ $breakpoint-large: 800px;
 $breakpoint-extra-large: 1200px;
 
 // Fonts (family, size)
+$font-size-small: 14px;
 $font-size: 16px;
 $font-size-medium: 18px;
 $font-size-large: 30px;
@@ -26,7 +27,10 @@ $font-family-title: 'Roboto slab', serif;
 $font-family-fallback: 'Helvetica', Arial, sans-serif;
 
 $letter-spacing-title: 3px;
+$letter-spacing-burger-menu: 5px;
 $letter-spacing-404: 15px;
+
+$line-height: 2;
 
 // Couleurs
 $white: #FFF;
