@@ -1,12 +1,13 @@
 
 .name_presentation{
   display: none;
+
   @media (min-width: $breakpoint-medium){
     display: block;
-  color: $color-text;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    color: $color-text;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   
 }
@@ -15,18 +16,14 @@
 /* block-$ */
 .block-effect {
   font-size: calc(8px + 6vw);
-  margin-top: 0.5em;
+  margin-top: 0.25em;
 }
 
 .block-reveal {
   --t: calc(var(--td) + var(--d));
-
   color: transparent;
-  padding: 4px;
-
   position: relative;
   overflow: hidden;
-
   animation: revealBlock 0s var(--t) forwards;
 }
 
@@ -35,12 +32,9 @@
 
   width: 0%;
   height: 100%;
-  padding-bottom: 4px;
-
   position: absolute;
   top: 0;
   left: 0;
-
   background: var(--bc);
   animation: revealingIn var(--td) var(--d) forwards, revealingOut var(--td) var(--t) forwards;
 }

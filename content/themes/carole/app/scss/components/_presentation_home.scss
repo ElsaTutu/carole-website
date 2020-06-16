@@ -11,14 +11,18 @@
 .presentation_section {
   display: flex;
   flex-direction: column;
-  margin-left: 2em;
-  margin-right: 2em;
-  margin-bottom: 2em;
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-top: 3em;
+
 
   @media (min-width: $breakpoint-medium) {
     flex-direction: row;   
     align-items: center; 
-    height: 60vh;
+    margin-left: 2em;
+  margin-right: 2em;
+    // height: 60vh;
+    margin-top: 2em;
 
 // reverse the order of 2nd element 
     &:nth-child(2)  {
@@ -37,7 +41,7 @@
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
   height: 50vh;
-  margin-top: 2em;
+  // margin-top: 2em;
 
   @media (min-width: $breakpoint-medium) {
     margin: 1em;
@@ -50,11 +54,12 @@
   display: flex;
   flex-direction: column;
   text-align: justify;
+  align-items: center;
   
 
   @media (min-width: $breakpoint-medium) {
-    margin: 0 3em;   
-    line-height: 1.6;
+    margin: 0 4em;   
+    // line-height: 1.6;
     }
 }
 
