@@ -1,9 +1,7 @@
 
 .typewrite {
-  
   color:black;
   font-family: monospace;
-  
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid $color-title; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */

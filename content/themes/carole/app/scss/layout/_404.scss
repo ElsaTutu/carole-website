@@ -2,7 +2,7 @@
 .error_page{
   background:$color-title;
     overflow: hidden;
-    height:65vh;
+    height:60vh;
     width: 100%;
 
   @media (min-width: $breakpoint-medium){
@@ -10,7 +10,7 @@
     z-index: -1;
     background:$color-title;
     overflow: hidden;
-    height: 100%;
+    height: 85vh;
     width: 100%;
   }
   

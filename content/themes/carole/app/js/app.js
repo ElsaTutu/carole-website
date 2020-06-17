@@ -16,12 +16,14 @@ var app = {
     slideIndex++;
     if (slideIndex > slides.length) {slideIndex = 1}    
     for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
+        dots[i].className = dots[i].className.replace(" active-dot", "");
     }
     slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active";
+    dots[slideIndex-1].className += " active-dot";
     setTimeout(showSlides, 5000); // Change image every 5 seconds
-    }
+    };
+    
+    
 
     
   },
@@ -103,15 +105,25 @@ var TxtType = function(el, toRotate, period) {
             });
 
         });
-        
-        // presentation work home_page
-        
-        
-                
+
+        // function to select the current link into the menu
+        //https://stackoverflow.com/questions/10646775/active-menu-highlight-css 
+
+        $(function(){
+            // this will get the full URL at the address bar
+            var url = window.location.href; 
+
+            // passes on every "a" tag 
+            $("#sub-header a").each(function() {
+                    // checks if its the same on the address bar
+                if(url == (this.href)) { 
+                    $(this).closest("li").addClass("active");
+                }
+            });
+        });
 
       
 
 
 $(app.init);
 $(app.slideshow);
-// $(app.menubar);
