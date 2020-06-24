@@ -5,7 +5,7 @@
 
   @media (min-width: $breakpoint-medium) {
     display: flex;
-  justify-content: center;
+    justify-content: center;
     padding: 0.5em 0.5em 0em 0.5em;
     font-size: $font-size-large;
   }
@@ -20,7 +20,6 @@
 }
 
 .news-card {
-  // border: 0px solid aqua;
   margin: 0.5rem;
   position: relative;
   height: 12rem;
@@ -35,10 +34,9 @@
   -moz-transform: translate3d(0, 0, 0);
 }
 
-@media (min-width: 900px) {
-
-.news-card {
-    height: 20rem
+@media (min-width: $breakpoint-medium) {
+  .news-card {
+      height: 20rem
 }
   }
 
@@ -60,7 +58,6 @@
     width: 100%;
     height: 100%;
     z-index: 1;
-/*     background: rgba(255,0,0,.5); */
   }
 
 .news-card__image {

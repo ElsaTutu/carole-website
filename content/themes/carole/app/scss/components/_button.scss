@@ -1,17 +1,8 @@
-.presentation_content_button, {
+.presentation_content_button {
   width: 250px;
   display: flex;
   justify-content: center;
   align-self: center;
-  // // background-color: $color-button;
-  // padding: 0.5em;
-  // border: none;
-  // border-radius: 5px;
-  // transition-duration: 0.4s;
-  // font-weight: bold;
-  // color: $color-text;
-  // box-shadow: 2px 2px 2px 2px $black-shadow;
-
   position: relative;
   padding: 1em 1.5em;
   border: none;
@@ -22,15 +13,9 @@
   margin: 1em 0.8em;
 }
 
-// 
-// .presentation_content_button:hover {
-//   background-color: $color-button;
-//   color: $color-button-hover
-// }
-
 //https://codepen.io/emanuelgsouza/pen/YVJOZo
 .presentation_content_button {
-  color: #435a6b;
+  color: $grey-blue;
 }
 .presentation_content_button::after, .presentation_content_button::before {
   content: "";
@@ -48,19 +33,19 @@
   right: 0;
   border-top-color: transparent;
   border-left-color: transparent;
-  border-bottom-color: #435a6b;
-  border-right-color: #435a6b;
+  border-bottom-color: $grey-blue;
+  border-right-color: $grey-blue;
 }
 .presentation_content_button::before {
   top: 0;
   left: 0;
   border-bottom-color: transparent;
   border-right-color: transparent;
-  border-top-color: #435a6b;
-  border-left-color: #435a6b;
+  border-top-color: $grey-blue;
+  border-left-color: $grey-blue;
 }
 .presentation_content_button:hover:after, .presentation_content_button:hover:before {
-  border-color: #435a6b;
+  border-color: $grey-blue;
   width: 100%;
   height: 100%;
 }

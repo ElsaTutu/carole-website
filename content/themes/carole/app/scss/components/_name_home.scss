@@ -1,4 +1,3 @@
-
 .home_presentation{
   display: none;
 
@@ -29,7 +28,6 @@
 
 .block-reveal::after {
   content: '';
-
   width: 0%;
   height: 100%;
   position: absolute;
@@ -43,7 +41,7 @@
 /* animations */
 @keyframes revealBlock {
   100% {
-    color: #0f0f0f;
+    color: $black;
   }
 }
 

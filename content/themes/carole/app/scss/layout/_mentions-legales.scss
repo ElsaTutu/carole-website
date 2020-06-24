@@ -1,17 +1,11 @@
 .container_mentions_legales{
   padding-top: 3em; 
-  // margin-bottom: 3em; 
   margin: 1em;
   
-
-  
-
-  @media (min-width: $breakpoint-medium) {
-  // margin-top: 110px; /* Add a top margin to avoid content overlay */      
+  @media (min-width: $breakpoint-medium) {    
     position: relative;
     margin-left: 7.5em;
     margin-right: 7.5em;
-    // height: 65vh;
     
     }
 }
@@ -27,5 +21,4 @@
 .container_mentions_legales_p {
   text-align: justify;
   line-height: $line-height;
-  // margin: 0.5em;
 }

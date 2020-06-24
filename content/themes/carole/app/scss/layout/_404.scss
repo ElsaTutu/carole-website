@@ -99,14 +99,14 @@ hr {
 
   @media (min-width: $breakpoint-medium){
     padding: 0;
-  border: none;
-  border-top: 5px solid $text-text-white;
-  color: $text-text-white;
-  text-align: center;
-  margin: 0.5em auto;
-  width: 420px;
-  height: 10px;
-  z-index: -10;
+    border: none;
+    border-top: 5px solid $text-text-white;
+    color: $text-text-white;
+    text-align: center;
+    margin: 0.5em auto;
+    width: 420px;
+    height: 10px;
+    z-index: -10;
   }
   
 }
@@ -122,12 +122,12 @@ hr:after {
   
   @media (min-width: $breakpoint-medium){
     content: "\2022";
-  display: inline-block;
-  position: relative;
-  top: -0.75em;
-  font-size: 2em;
-  padding: 0 0.2em;
-  background:$color-button;
+    display: inline-block;
+    position: relative;
+    top: -0.75em;
+    font-size: 2em;
+    padding: 0 0.2em;
+    background:$color-button;
   }
   
 }
@@ -159,16 +159,16 @@ hr:after {
 
 .error_page_button {
    background-color:$color-bg-light;
-      position: relative;
-      display: inline-block;
-      width: 200px;
-      padding: 5px;
-      z-index: 0;
-      font-size: $font-404-button-mobile;
-      margin: 1em;
-      color: $color-title;
-      text-decoration: none;
-      // margin-right: 10px;
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    padding: 5px;
+    z-index: 0;
+    font-size: $font-404-button-mobile;
+    margin: 1em;
+    color: $color-title;
+    text-decoration: none;
+
 
   @media (min-width: $breakpoint-medium){
       background-color: rgb(255, 255, 255);

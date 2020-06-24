@@ -2,7 +2,7 @@
 $fa-font-path: '~font-awesome/fonts';
 
 // Breakpoints
-$breakpoint-medium: 500px;
+$breakpoint-medium: 800px;
 $breakpoint-large: 800px;
 $breakpoint-extra-large: 1200px;
 
@@ -78,6 +78,7 @@ $dot-unselected: $dark-grey;
 
 //Backgrounds
 $color-bg: $white;
+$color-bg-prices: $orange;
 $color-bg-transparent: $white-transparent;
 $color-bg-light: $white;
 $color-bg-dark: $black;

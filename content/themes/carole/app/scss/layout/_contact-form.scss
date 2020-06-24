@@ -4,6 +4,7 @@
   @media (min-width: $breakpoint-medium) {
   margin-left: 2em;
   margin-left: 2em;
+  position: relative;
   }
   
 }
@@ -60,11 +61,7 @@ input[type=submit]:hover {
 
 /* Style the container/contact section */
 .contact {
-  // border-radius: 5px;
-  // background-color: $dark-grey;
   padding-top: 3em;
-  // height: 80vh;
-  // margin-top: 3em;
 
   @media (min-width: $breakpoint-medium){
     height: 85vh;

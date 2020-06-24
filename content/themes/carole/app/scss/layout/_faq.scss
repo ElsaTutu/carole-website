@@ -1,13 +1,23 @@
 // https://codepen.io/abergin/pen/ihlDf
-.transition, .faq-answer, .faq-ul .faq-li .faq-icon:before, .faq-ul .faq-li .faq-icon:after {
+.transition, 
+.faq-answer, 
+.faq-ul 
+.faq-li 
+.faq-icon:before, 
+.faq-ul .faq-li 
+.faq-icon:after {
   transition: all 0.25s ease-in-out;
 }
 
-.flipIn, .faq-main-title, .faq-ul .faq-li {
+.flipIn, 
+.faq-main-title, 
+.faq-ul 
+.faq-li {
   animation: flipdown 0.5s ease both;
 }
 
-.no-select, .faq-main-title {
+.no-select, 
+.faq-main-title {
   -webkit-tap-highlight-color: $black;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -33,38 +43,61 @@
   padding-top: 18px;
   border-top: 1px dotted $grey;
 }
-.faq-ul .faq-li:nth-of-type(1) {
+
+.faq-ul 
+.faq-li:nth-of-type(1) {
   animation-delay: 0.5s;
 }
-.faq-ul .faq-li:nth-of-type(2) {
+
+.faq-ul 
+.faq-li:nth-of-type(2) {
   animation-delay: 0.75s;
 }
-.faq-ul .faq-li:nth-of-type(3) {
+
+.faq-ul 
+.faq-li:nth-of-type(3) {
   animation-delay: 1s;
 }
-.faq-ul .faq-li:last-of-type {
+
+.faq-ul 
+.faq-li:last-of-type {
   padding-bottom: 0;
 }
-.faq-ul .faq-li i {
+
+.faq-ul 
+.faq-li i {
   position: absolute;
   transform: translate(-6px, 0);
   margin-top: 16px;
   right: 0;
 }
-.faq-ul .faq-li .faq-icon:before, .faq-ul li .faq-icon:after {
+
+.faq-ul 
+.faq-li 
+.faq-icon:before, 
+.faq-ul li 
+.faq-icon:after {
   content: "";
   position: absolute;
   background-color: $color-button;
   width: 3px;
   height: 9px;
 }
-.faq-ul .faq-li .faq-icon:before {
+
+.faq-ul 
+.faq-li 
+.faq-icon:before {
   transform: translate(-2px, 0) rotate(45deg);
 }
-.faq-ul .faq-li .faq-icon:after {
+
+.faq-ul 
+.faq-li 
+.faq-icon:after {
   transform: translate(2px, 0) rotate(-45deg);
 }
-.faq-ul .faq-li input[type=checkbox] {
+
+.faq-ul 
+.faq-li input[type=checkbox] {
   position: absolute;
   cursor: pointer;
   width: 100%;
@@ -72,16 +105,22 @@
   z-index: 1;
   opacity: 0;
 }
-.faq-ul .faq-li input[type=checkbox]:checked ~ .faq-answer{
+
+.faq-ul 
+.faq-li input[type=checkbox]:checked ~ .faq-answer{
   margin-top: 0;
   max-height: 0;
   opacity: 0;
   transform: translate(0, 50%);
-}
-.faq-ul .faq-li input[type=checkbox]:checked ~ .faq-icon:before {
+} 
+
+.faq-ul  
+.faq-li input[type=checkbox]:checked ~ .faq-icon:before {
   transform: translate(2px, 0) rotate(45deg);
-}
-.faq-ul .faq-li input[type=checkbox]:checked ~ .faq-icon:after {
+} 
+
+.faq-ul  
+.faq-li input[type=checkbox]:checked ~ .faq-icon:after {
   transform: translate(-2px, 0) rotate(-45deg);
 }
 
@@ -115,10 +154,11 @@
   padding: 0 1em 2em 1em;
 
   @media (min-width: $breakpoint-medium) {
-    padding: 0 3em 2em 3em;
+    padding: 0 20em 2em 20em;
     position: relative;
     }
 }
+
 .faq-main-title {
   display: flex;
   justify-content: center;

@@ -2,6 +2,7 @@ var app = {
   init: function() {
     console.log('init');
     
+    
     // slideshow
     var slideIndex = 0;
     showSlides();
