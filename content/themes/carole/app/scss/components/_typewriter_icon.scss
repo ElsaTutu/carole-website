@@ -5,7 +5,10 @@
 }
 
 .typewriter_icon {
-  margin-left: 1em;
+    visibility: hidden;
+    @media (min-width: $breakpoint-medium) {
+        visibility: visible;
+        margin-left: 1em;
     --blue: #5C86FF;
     --blue-dark: #275EFE;
     --key: #fff;
@@ -59,6 +62,8 @@
                 height: 14px;
             }
         }
+    }
+  
     }
     .paper {
         position: absolute;
