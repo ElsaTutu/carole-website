@@ -1,3 +1,4 @@
+// homepage "lire la suite"
 .presentation_content_button {
   width: 250px;
   display: flex;
@@ -15,7 +16,7 @@
 
 //https://codepen.io/emanuelgsouza/pen/YVJOZo
 .presentation_content_button {
-  color: $grey-blue;
+  color: $color-text;
 }
 .presentation_content_button::after, .presentation_content_button::before {
   content: "";
@@ -33,19 +34,19 @@
   right: 0;
   border-top-color: transparent;
   border-left-color: transparent;
-  border-bottom-color: $grey-blue;
-  border-right-color: $grey-blue;
+  border-bottom-color: $color-text;
+  border-right-color: $color-text;
 }
 .presentation_content_button::before {
   top: 0;
   left: 0;
   border-bottom-color: transparent;
   border-right-color: transparent;
-  border-top-color: $grey-blue;
-  border-left-color: $grey-blue;
+  border-top-color: $color-text;
+  border-left-color: $color-text;
 }
 .presentation_content_button:hover:after, .presentation_content_button:hover:before {
-  border-color: $grey-blue;
+  border-color: $color-text;
   width: 100%;
   height: 100%;
 }

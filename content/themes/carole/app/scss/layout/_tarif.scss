@@ -1,4 +1,6 @@
 .tarif_title {
+  margin-bottom: 0.5em;
+  
   @media (min-width: $breakpoint-medium) {
     display: none;
   } 
@@ -23,5 +25,6 @@
 }
 
 .tarif_subtitle {
-  margin: 2em 0 2em 0;
+  margin: 2em 0 1em 0;
+  font-size: $font-size-medium-large;
 }

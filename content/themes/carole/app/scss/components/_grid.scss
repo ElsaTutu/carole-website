@@ -10,12 +10,12 @@
 }
 .grid {
     &__item {
-      
         width: 100%;
         padding: 1em 2em;
-        
         position: relative;
         text-align: justify;
+        display: flex;
+        flex-direction: column;
     
         &__icon {
             position: absolute;

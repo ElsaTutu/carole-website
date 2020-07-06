@@ -9,9 +9,9 @@
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
-  height: 50vh;
-  margin-top: 2em;
-  margin-bottom: 1em;
+  height: 40vh;
+  width: 80%;
+  margin: 2em auto 2em auto;
   border-radius: 0.5em;
 
 }
@@ -27,7 +27,7 @@
   color: $color-text;
   font-size: $font-size-large;
   letter-spacing: $letter-spacing-title;
-  align-content: center;
+  text-align: center;
 
   @media (min-width: $breakpoint-medium) {
     //https://codepen.io/markmead/pen/wvwjePG
