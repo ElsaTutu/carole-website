@@ -28,6 +28,7 @@
   flex-direction: row;
   margin-left: 0.5em;
   
+  
 }
 
 nav .footer-menu-nav {
@@ -71,13 +72,19 @@ nav .footer-menu-nav {
   }
 }
 
-.footer-menu-nav  a {
+.footer-menu-nav  ul {
   text-transform: uppercase;
-  font-size: 0.7em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   
   @media (min-width: $breakpoint-medium) {
     text-decoration: none;
     font-size: 0.9em;
+    display: flex;
+    flex-direction: row;
+
+    
   }
 }
 
@@ -87,6 +94,12 @@ nav .footer-menu-nav {
     @media (min-width: $breakpoint-medium) {
       text-decoration: none;
       color: $toggle-color;
+  }
+}
+
+.footer-menu-nav a {
+    @media (min-width: $breakpoint-medium) {
+     margin: 0.5em
   }
 }
 

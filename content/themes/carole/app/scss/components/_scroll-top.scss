@@ -34,4 +34,10 @@
 .scroll-back {
   margin-left: 1em;
   margin-bottom: 1.5em;
+  padding-top: 2em;
+
+  @media (min-width: $breakpoint-medium) {
+      padding-top: 0;
+      
+    }
 }

@@ -1,0 +1,38 @@
+.contact_link {
+  width: 20em;
+  padding: 0.5em 0 3em 0;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+
+  @media (min-width: $breakpoint-medium) {
+    width: 40em;
+    padding: 1em 1em 4em 1em;
+    
+  }
+}
+
+.contact_link_button {
+  width: 10em;
+  align-self: center;
+
+  @media (min-width: $breakpoint-medium) {
+    font-size: 1.5em;
+  }
+ 
+}
+
+.contact_link_text {
+  font-size: 2em;
+  line-height: 1.2;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+
+  @media (min-width: $breakpoint-medium) {
+    font-size: 3em;
+  }
+
+}

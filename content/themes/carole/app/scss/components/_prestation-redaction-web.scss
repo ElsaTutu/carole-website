@@ -9,6 +9,7 @@ flex-direction: column;
 padding-top: 3em;
 
 
+
   @media (min-width: $breakpoint-medium) {
     flex-direction: row;
     margin: 2em;
@@ -25,6 +26,7 @@ padding-top: 3em;
   @media (min-width: $breakpoint-medium) {
     margin: 2em;
     width: 50%;
+    
   }
 }
 
@@ -35,12 +37,17 @@ padding-top: 3em;
 
 
   @media (min-width: $breakpoint-medium) {
-    margin: 3em;
+    margin: 5em 5em 0 5em;
+    height: 80%;
   }
 }
 
 .prestations_content_redaction_h2,
 .prestations_content_consulting_h2 {
-  margin: 2em 1em 1em 1em;
+  margin: 3em 1em 1em 1em;
   font-size: 2em;
+}
+
+.redaction_web_title {
+  padding-top: 3em;
 }
