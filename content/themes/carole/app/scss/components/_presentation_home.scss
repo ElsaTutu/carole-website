@@ -37,10 +37,14 @@
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Do not repeat the image */
   background-size: cover; /* Resize the background image to cover the entire container */
-  height: 50vh;
+  height: 40vh;
+  width: 80%;
+  display: flex;
+  align-self: center;
 
   @media (min-width: $breakpoint-medium) {
     margin: 1em;
+    height: 60vh;
     }
 }
 

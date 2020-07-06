@@ -28,7 +28,7 @@
     'layout/header',
     'layout/main',
     'layout/mentions-legales',
-    'layout/tarifs';
+    'layout/tarif';
 
 // 5. Components
 @import
@@ -37,11 +37,12 @@
     'components/blog-newsletter',
     'components/blog-videos',
     'components/button',
+    'components/consulting-block',
     'components/grid',
     'components/icons',
     'components/logo-header',
     'components/main-menu',
-    'components/name_home',
+    'components/word_carousel',
     'components/presentation_home',
     'components/prestation-redaction-web',
     'components/prestation-consulting',
