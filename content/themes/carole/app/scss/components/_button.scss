@@ -129,14 +129,12 @@ button.fancy {
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  // float: right;
   font-weight: 700;
   letter-spacing: .05em;
   margin: 0;
   outline: none;
   overflow: visible;
   padding: 1.25em 2em;
-  // margin: 2em 0 2em 0;
   position: relative;
   text-align: center;
   text-decoration: none;
@@ -179,7 +177,7 @@ button.fancy {
     top: -2px;
     left: 0.625rem;
     position: absolute;
-    background: white;
+    background: $white;
     -webkit-transition: width 0.5s ease-out, left 0.3s ease-out;
     transition: width 0.5s ease-out, left 0.3s ease-out;
 }
@@ -190,7 +188,7 @@ button.fancy {
     right: 1.875rem;
     bottom: -2px;
     position: absolute;
-    background: white;
+    background: $white;
     -webkit-transition: width 0.5s ease-out, right 0.3s ease-out;
     transition: width 0.5s ease-out, right 0.3s ease-out;
 }
@@ -200,33 +198,33 @@ button.fancy {
     right: 0.625rem;
     bottom: -2px;
     position: absolute;
-    background: white;
+    background:$white;
     -webkit-transition: width 0.5s ease-out, right 0.3s ease-out;
     transition: width 0.5s ease-out, right 0.3s ease-out;
 }
   
     &:hover {
-    color: white;
-    background: black;
+      color: $white;
+      background: $black;
     
     &::before {
-    width: 0.9375rem;
-    background: white;
+      width: 0.9375rem;
+      background: $white;
     }
     
     a {
-    color: white;
+    color: $white;
     padding-left: 1.5em;
    }
     
     .top-key {
-    left: -2px;
-    width: 0px;
+      left: -2px;
+      width: 0px;
 }
     .bottom-key-1 ,
     .bottom-key-2 {
-    right: 0;
-    width: 0;
+      right: 0;
+      width: 0;
   }
    
 }

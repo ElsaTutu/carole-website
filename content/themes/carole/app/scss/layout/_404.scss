@@ -1,9 +1,9 @@
 //https://codepen.io/sqfreakz/pen/GJRJOY 
 .error_page{
   background:$color-title;
-    overflow: hidden;
-    height:60vh;
-    width: 100%;
+  overflow: hidden;
+  height:60vh;
+  width: 100%;
 
   @media (min-width: $breakpoint-medium){
     position: relative;
@@ -13,8 +13,6 @@
     height: 85vh;
     width: 100%;
   }
-  
-
 }
 .error_page_text {
   color: $color-bg-light;
@@ -53,12 +51,12 @@
 }
 ._1 {
   text-align: center;
-      display: block;
-      position: relative;
-      letter-spacing: 4px;
-      font-size: $font-404-text-mobile;
-      line-height: 90%;
-      margin-bottom: 0.5em;
+  display: block;
+  position: relative;
+  letter-spacing: 4px;
+  font-size: $font-404-text-mobile;
+  line-height: 90%;
+  margin-bottom: 0.5em;
   
   @media (min-width: $breakpoint-medium){
       text-align: center;
@@ -86,7 +84,6 @@
 }
 
 hr {
-   
   border: none;
   border-top: 1px solid $text-text-white;
   color: $text-text-white;

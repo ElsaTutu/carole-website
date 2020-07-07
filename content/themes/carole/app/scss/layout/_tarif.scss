@@ -7,7 +7,7 @@
 }
 
 // carousel words
-._flip4_italic {
+._flip4 li {
   font-style: italic;
 }
 
@@ -27,4 +27,49 @@
 .tarif_subtitle {
   margin: 2em 0 1em 0;
   font-size: $font-size-medium-large;
+}
+
+.tarif {
+  display: flex;
+  flex-direction: column;
+  padding: 2em;
+
+  @media (min-width: $breakpoint-medium) {
+    mini-height: 80vh;
+  }
+}
+
+.tarif_redaction,
+.tarif_consulting {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $breakpoint-medium) {
+    flex-direction: row;
+  }
+}
+
+.tarif_redaction_content,
+.tarif_consulting_content {
+  @media (min-width: $breakpoint-medium) {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+}
+
+.tarif_redaction_title,
+.tarif_consulting_title {
+  padding: 0.5em;
+  display: flex;
+  align-self: center;
+
+  @media (min-width: $breakpoint-medium){
+    width: 25%;
+    display: flex;
+    align-self: center;
+    justify-content: center;
+
+
+  }
 }

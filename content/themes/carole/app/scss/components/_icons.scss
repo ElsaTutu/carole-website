@@ -1,19 +1,10 @@
-.fa{
-    font-size: 1.5em !important; /*size whatever you like*/
-}
-
-.social-nav .fa {
-  font-size: 1.5em !important;
-}
-
-
 //home page
 .home_page {
 
       &_01{
         background-image: url(/images/icons/icons8-puzzle-100.png);
         background-repeat: no-repeat;
-        height: 12vh;
+        height: 13vh;
         width: 7em;
         display: flex;
         align-self: center;
@@ -22,7 +13,7 @@
       &_02{
         background-image: url(/images/icons/icons8-partager-100.png);
         background-repeat: no-repeat;
-        height: 12vh;
+        height: 13vh;
         width: 7em;
         display: flex;
         align-self: center;
@@ -32,7 +23,7 @@
       &_03{
         background-image: url(/images/icons/icons8-signet-100.png);
         background-repeat: no-repeat;
-        height: 12vh;
+        height: 13vh;
         width: 7em;
         display: flex;
         align-self: center;
@@ -42,7 +33,7 @@
       &_04{
         background-image: url(/images/icons/icons8-ok-100.png);
         background-repeat: no-repeat;
-        height: 12vh;
+        height: 13vh;
         width: 7em;
         display: flex;
         align-self: center;
@@ -52,7 +43,7 @@
       &_05{
         background-image: url(/images/icons/icons8-information-100.png);
         background-repeat: no-repeat;
-        height: 12vh;
+        height: 13vh;
         width: 7em;
         display: flex;
         align-self: center;
@@ -62,7 +53,7 @@
       &_06{
         background-image: url(/images/icons/icons8-image-100.png);
         background-repeat: no-repeat;
-        height: 12vh;
+        height: 13vh;
         width: 7em;
         display: flex;
         align-self: center;
@@ -76,7 +67,7 @@
   &_01{
         background-image: url(/images/icons/icons8-ouvrir-100.png);
         background-repeat: no-repeat;
-        height: 12vh;
+        height: 13vh;
         width: 7em;
         display: flex;
         align-self: center;
@@ -85,7 +76,7 @@
       &_02{
         background-image: url(/images/icons/icons8-mallette-100.png);
         background-repeat: no-repeat;
-        height: 12vh;
+        height: 13vh;
         width: 7em;
         display: flex;
         align-self: center;
@@ -95,7 +86,7 @@
       &_03{
         background-image: url(/images/icons/icons8-clé-100.png);
         background-repeat: no-repeat;
-        height: 12vh;
+        height: 13vh;
         width: 7em;
         display: flex;
         align-self: center;
@@ -109,7 +100,7 @@
 .consulting_details_block_image_01 {
   background-image: url(/images/icons/icons8-services-100.png);
   background-repeat: no-repeat;
-  height: 12vh;
+  height: 13vh;
   width: 7em;
   display: flex;
   align-self: center;
@@ -118,7 +109,7 @@
 .consulting_details_block_image_02 {
   background-image: url(/images/icons/icons8-dossier-ouvert-100.png);
   background-repeat: no-repeat;
-  height: 12vh;
+  height: 13vh;
   width: 7em;
   display: flex;
   align-self: center;
@@ -126,17 +117,17 @@
 
 //contact
 .contact-info__part__image_01 {
-background-image: url(/images/icons/icons8-gmail-100.png);
+  background-image: url(/images/icons/icons8-gmail-100.png);
   background-repeat: no-repeat;
-  height: 12vh;
+  height: 13vh;
   width: 7em;
 
 }
 
 .contact-info__part__image_02{
-background-image: url(/images/icons/icons8-whatsapp-100.png);
+  background-image: url(/images/icons/icons8-whatsapp-100.png);
   background-repeat: no-repeat;
-  height: 12vh;
+  height: 13vh;
   width: 7em;
 
 }
