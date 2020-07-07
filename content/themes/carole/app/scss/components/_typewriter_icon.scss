@@ -1,3 +1,4 @@
+// moving icon into the blog page
 //https://codepen.io/aaroniker/pen/XWWPbep
 @mixin keyboard($position: 0, $value: 0) {
     $keys: map-merge((0: '0', 1: '0', 2: '0', 3: '0', 4: '0', 5: '0', 6: '10px', 7: '10px', 8: '10px', 9: '10px'), ($position: $value));

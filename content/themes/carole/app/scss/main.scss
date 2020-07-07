@@ -20,7 +20,7 @@
 @import
     'layout/404',
     'layout/article',
-    'layout/articles-blog',
+    'layout/articles-excerpt-blog',
     'layout/blog',
     'layout/contact-form',
     'layout/faq',
@@ -32,14 +32,15 @@
 
 // 5. Components
 @import
-    'components/about_your_project',
+    
     'components/blog-categories',
     'components/blog-newsletter',
-    'components/blog-videos',
+    'components/blog-video',
     'components/button',
     'components/consulting-block',
     'components/grid',
     'components/icons',
+    'components/link_to_contact',
     'components/logo-header',
     'components/main-menu',
     'components/word_carousel',
