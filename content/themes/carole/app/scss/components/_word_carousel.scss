@@ -16,7 +16,8 @@
 /* block-$ */
 .block-effect {
   font-size: calc(6px + 4vw);
-  margin-top: 0.25em;
+  margin-top: 0.55em;
+  
 }
 
 .block-reveal {
@@ -69,11 +70,15 @@
 
 }
 
+.main-title {
+  font-size: 50px;
+}
+
 
 // carousel words
 //https://codepen.io/EricPorter/pen/JjPmOOb
 .home_presentation_word_carousel {
-    font-size: 36px;
+    // font-size: 36px;
     font-weight: 100;
     
     div {
