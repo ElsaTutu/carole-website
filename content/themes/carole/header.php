@@ -40,13 +40,24 @@
               <span class="fa fa-close" aria-hidden="true"></span>
             </a>
             <ul>
-              <li><a  href="index.html">Accueil</a></li>
+
+              <?php
+                    $menu = wp_nav_menu([
+                        'theme_location' => 'header-menu',
+                        'echo' => false
+                        ]);
+                    // $menu = strip_tags($menu, '<a><div>');
+                    $menu = str_replace(['menu-item', 'class="menu"'], ['main-nav__item', ''], $menu);
+                    echo $menu;
+                ?>
+
+              <!-- <li><a  href="">Accueil</a></li>
               <li><a href="redaction.html">Rédaction Web</a></li>
               <li><a href="consulting.html">Consulting</a></li>
               <li><a href="tarifs.html">Tarifs</a></li>
               <li><a href="a-propos.html">A propos</a></li>
               <li><a href="contact.html">Contact</a></li>
-              <li><a href="blog.html">Blog</a></li>
+              <li><a href="blog.html">Blog</a></li> -->
             </ul>
         </nav>
         <a href="#main-menu-toggle"

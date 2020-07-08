@@ -23,11 +23,36 @@ var app = {
     dots[slideIndex-1].className += " active-dot";
     setTimeout(showSlides, 5000); // Change image every 5 seconds
     };
+
+    
+
+//     window.scroll({
+//   top: 0, 
+//   left: 0, 
+//   behavior: 'smooth'
+// });
+
+    
+
+    
     
     
 
     
   },
+
+  activeLink: function(){
+            // this will get the full URL at the address bar
+            var url = window.location.href; 
+
+            // passes on every "a" tag 
+            $("#sub-header a").each(function() {
+                    // checks if its the same on the address bar
+                if(url == (this.href)) { 
+                    $(this).closest("li").addClass("active");
+                }
+            });
+        }
 };
 
 // burger menu
@@ -72,59 +97,49 @@ var TxtType = function(el, toRotate, period) {
         }, delta);
     };
 
-    window.onload = function() {
-        var elements = document.getElementsByClassName('typewrite');
-        for (var i=0; i<elements.length; i++) {
-            var toRotate = elements[i].getAttribute('data-type');
-            var period = elements[i].getAttribute('data-period');
-            if (toRotate) {
-              new TxtType(elements[i], JSON.parse(toRotate), period);
-            }
-        }
-        // INJECT CSS
-        var css = document.createElement("style");
-        css.type = "text/css";
-        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
-        document.body.appendChild(css);
-    };
+    // window.onload = function() {
+    //     var elements = document.getElementsByClassName('typewrite');
+    //     for (var i=0; i<elements.length; i++) {
+    //         var toRotate = elements[i].getAttribute('data-type');
+    //         var period = elements[i].getAttribute('data-period');
+    //         if (toRotate) {
+    //           new TxtType(elements[i], JSON.parse(toRotate), period);
+    //         }
+    //     }
+    //     // INJECT CSS
+    //     var css = document.createElement("style");
+    //     css.type = "text/css";
+    //     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+    //     document.body.appendChild(css);
+    // };
 
 
     /*Scroll to top when arrow up clicked BEGIN*/
-        $(window).scroll(function() {
-            var height = $(window).scrollTop();
-            if (height > 100) {
-                $('#back2Top').fadeIn();
-            } else {
-                $('#back2Top').fadeOut();
-            }
-        });
-        $(document).ready(function() {
-            $("#back2Top").click(function(event) {
-                event.preventDefault();
-                $("html, body").animate({ scrollTop: 0 }, "slow");
-                return false;
-            });
+        // $(window).scroll(function() {
+        //     var height = $(window).scrollTop();
+        //     if (height > 100) {
+        //         $('#back2Top').fadeIn();
+        //     } else {
+        //         $('#back2Top').fadeOut();
+        //     }
+        // });
+        // $(document).ready(function() {
+        //     $("#back2Top").click(function(event) {
+        //         event.preventDefault();
+        //         $("html, body").animate({ scrollTop: 0 }, "slow");
+        //         return false;
+        //     });
 
-        });
+        // });
 
         // function to select the current link into the menu
-        //https://stackoverflow.com/questions/10646775/active-menu-highlight-css 
+        // https://stackoverflow.com/questions/10646775/active-menu-highlight-css 
 
-        $(function(){
-            // this will get the full URL at the address bar
-            var url = window.location.href; 
-
-            // passes on every "a" tag 
-            $("#sub-header a").each(function() {
-                    // checks if its the same on the address bar
-                if(url == (this.href)) { 
-                    $(this).closest("li").addClass("active");
-                }
-            });
-        });
+        
 
       
 
 
 $(app.init);
-$(app.slideshow);
+$(app.slideshow); 
+$(app.activeLink);  

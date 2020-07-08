@@ -5,9 +5,19 @@
         <div class="footer-menu">
           <nav id="footer-menu-nav" class="footer-menu-nav" aria-label="Main menu">
           <ul>
-            <li><a href="mentions-legales.html">Mentions Légales </a></li> 
+            <?php
+                    $menu = wp_nav_menu([
+                        'theme_location' => 'footer-menu',
+                        'echo' => false
+                        ]);
+                    $menu = strip_tags($menu, '<a><div>');
+                    $menu = str_replace(['menu-item', 'class="menu"'], ['main-nav__item', ''], $menu);
+                    echo $menu;
+                ?>
+
+            <!-- <li><a href="mentions-legales.html">Mentions Légales </a></li> 
             <li><a href="cvg.html">CVG </a></li> 
-            <li><a href="confidentialite.html">Politique de confidentialité</a></li>
+            <li><a href="confidentialite.html">Politique de confidentialité</a></li> -->
           </ul>
           </nav>
         </div>

@@ -1,15 +1,68 @@
 // sentence written automatically in the homepage
-.typewrite {
-  color:$black;
+// .typewrite {
+//   color:$black;
+//   font-family: monospace;
+//   overflow: hidden; /* Ensures the content is not revealed until the animation */
+//   border-right: .15em solid $color-title; /* The typwriter cursor */
+//   white-space: nowrap; /* Keeps the content on a single line */
+//   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+//   letter-spacing: .15em; /* Adjust as needed */
+//   animation: 
+//   typing 3.5s steps(30, end),
+//   blink-caret .5s step-end infinite;
+
+// }
+
+// /* The typing effect */
+// @keyframes typing {
+//   from { width: 0 }
+//   to { width: 100% }
+// }
+
+// /* The typewriter cursor effect */
+// @keyframes blink-caret {
+//   from, to { border-color: transparent }
+//   50% { border-color: $color-title }
+// }
+
+// .wrap {
+//   font-size: $font-size-large;
+//   padding-left: 1em;
+  
+
+//   @media (min-width: $breakpoint-medium) {
+//       padding-left: 5em;
+//       font-size: $font-size-large;
+//     }
+
+  
+// }
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter h3 {
+  color: $color-text;
   font-family: monospace;
+  font-size: 25px;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid $color-title; /* The typwriter cursor */
+  border-right: .15em solid $orange; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .15em; /* Adjust as needed */
+  letter-spacing: .12em; /* Adjust as needed */
   animation: 
-  typing 3.5s steps(30, end),
-  blink-caret .5s step-end infinite;
+    typing 5s steps(30, end),
+    blink-caret 0.5s step-end infinite;
+    display: inline-block;
+
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    
+  
+  // margin-left: 0.5em;
+  // margin-right: 0.5em;
+
+  @media (min-width: $breakpoint-medium) {
+    margin-right: 2em;
+  }
 
 }
 
@@ -22,19 +75,16 @@
 /* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to { border-color: transparent }
-  50% { border-color: $color-title }
+  50% { border-color: $orange }
 }
 
-.wrap {
-  font-size: $font-size-large;
-  padding-left: 1em;
-  
+.typewriter {
+  display: inline-block;
 
   @media (min-width: $breakpoint-medium) {
-      padding-left: 5em;
-      font-size: $font-size-large;
-    }
+    padding-left: 5em;
+  }
+  
 
   
 }
-
