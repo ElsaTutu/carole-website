@@ -5,7 +5,7 @@
           <h1 class="presentation_content_title"><?php the_title(); ?></h1>
           <p class="presentation_content_text">
             <?php the_content(); ?></p>
-          <a href="a-propos.html" class="presentation_content_button">Lire la suite</a>
+          <a href="<?php bloginfo('url'); ?>/a-propos/" class="presentation_content_button">Lire la suite</a>
         </div>
       </div>
 

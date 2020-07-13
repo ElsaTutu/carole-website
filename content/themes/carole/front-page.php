@@ -1,7 +1,7 @@
 
 <?php get_header(); ?>
 
-  <main class="main">
+
 
     <section class="home_presentation">
       
@@ -29,7 +29,7 @@
        <?php
                 $args = [
             'post_type' => 'post',
-            'category_name' => 'presentation-photo'
+            'category_name' => 'home-big-paragraph'
         ];
 
         $wpqueryArticles = new WP_Query($args);
@@ -38,7 +38,7 @@
 
         <?php if ($wpqueryArticles->have_posts()): while ($wpqueryArticles->have_posts()): $wpqueryArticles->the_post(); ?>
 
-            <?php get_template_part('template-parts/presentation'); ?>
+            <?php get_template_part('template-parts/home/presentation'); ?>
 
         <?php endwhile; endif; ?>
 
@@ -55,7 +55,7 @@
       <?php
                 $args = [
             'post_type' => 'post',
-            'category_name' => 'competences'
+            'category_name' => 'home-small-paragraph'
         ];
 
         $wpqueryArticles = new WP_Query($args);
@@ -64,7 +64,7 @@
 
         <?php if ($wpqueryArticles->have_posts()): while ($wpqueryArticles->have_posts()): $wpqueryArticles->the_post(); ?>
 
-            <?php get_template_part('template-parts/skill'); ?>
+            <?php get_template_part('template-parts/home/skill'); ?>
 
         <?php endwhile; endif; ?>
     </section>
@@ -74,7 +74,7 @@
     <div class="contact_link">
       <div class="contact_link_container container">
           <h3 class="contact_link_text">Parlez-moi de votre projet</h3>
-            <a href="contact.html" class="effect01 contact_link_button" target="_blank"><span>Lire la suite</span></a>
+            <a href="<?php bloginfo('url'); ?>/a-propos/" class="effect01 contact_link_button" target="_blank"><span>Lire la suite</span></a>
       </div>
     </div>
 
@@ -89,7 +89,9 @@
 
 <!-- https://html-online.com/articles/dynamic-scroll-back-top-page-button-javascript/ -->
     <div class="scroll-back">
-      <i class="fa fa-angle-up" id="back2Top"  href="#" aria-hidden="true"></i>
+      <a href="#top">
+          <i class="fa fa-angle-up"  aria-hidden="true"></i>
+      </a>
     </div>
       
   <?php get_footer(); ?>
