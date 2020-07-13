@@ -7,17 +7,16 @@
          <div class="contact">
           <div style="text-align:center">
             <h1>Me contacter</h1>
-            <p>Bla bla bla</p>
           </div>
           <div class="row">
             <div class="column">
-              <?php get_template_part('template-parts/contact-form'); ?>
+              <?php get_template_part('template-parts/contact/contact-form'); ?>
       
             </div>
             <div class="column">
               <address class="contact-info">
 
-                <?php get_template_part('template-parts/footer/contact-info'); ?>
+                <?php get_template_part('template-parts/contact/contact-info'); ?>
                 
                 
                </address>

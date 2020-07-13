@@ -3,7 +3,7 @@
                     <div class="contact-info__part__right__part">
                       <h2 class="contact-info__part__label">Email</h2>
                       <!-- On peut utiliser ce genre de chose pour éviter les spam : https://www.nicolas-hoffmann.net/utilitaires/crypteur.php -->
-                      <a href="mailto:toto@oclock.local" class="contact-info__part__content is-email">gnééééé@bloup</a>
+                      <a href="mailto:adresse@gmail.com" class="contact-info__part__content is-email">adresse[@]gmail.com</a>
                     </div>
                     </div>
                     
