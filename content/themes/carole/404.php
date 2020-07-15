@@ -9,7 +9,7 @@
 
 get_header();
 ?>
-<main class="main">
+
     <div class="error_page">
        <div id="error_page_clouds clouds">
             <div class="cloud x1"></div>

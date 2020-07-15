@@ -87,11 +87,6 @@
       </form>
     </div>
 
-<!-- https://html-online.com/articles/dynamic-scroll-back-top-page-button-javascript/ -->
-    <div class="scroll-back">
-      <a href="#top">
-          <i class="fa fa-angle-up"  aria-hidden="true"></i>
-      </a>
-    </div>
+
       
   <?php get_footer(); ?>

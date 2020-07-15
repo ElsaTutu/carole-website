@@ -3,7 +3,7 @@
 ?>
 <?php get_header() ?>
 
-<main class="main">
+
          <div class="contact">
           <div style="text-align:center">
             <h1>Me contacter</h1>
