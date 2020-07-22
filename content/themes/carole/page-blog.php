@@ -77,37 +77,7 @@ src="https://www.youtube.com/embed/tgbNymZ7vqY">
 
     <div class="wrapper-right">
       <?php get_template_part('template-parts/blog/blog-right-wraper'); ?>
-        <!-- <div class="search-bar blog-search-bar">
-          <form method="get" action="#">
-            <div class="text-center blog-text-center">
-                <input type="text" id="search" placeholder="recherche">
-                <i class="fa fa-search" aria-hidden="true"></i>     
-            </div>
-          </form>
-         </div>
-
-        <div class="categories">
-          <h2 class="title_categories">Les catégories</h2>
-          <ul class="categorie-blog-list">
-            
-            <li class="categorie-blog-item"><a href="#" class="categorie-blog-item-link">Catégorie 1</a></li>
-            <li class="categorie-blog-item"><a href="#" class="categorie-blog-item-link">Catégorie 2</a></li>
-            <li class="categorie-blog-item"><a href="#" class="categorie-blog-item-link">Catégorie 3</a></li>
-            <li class="categorie-blog-item"><a href="#" class="categorie-blog-item-link">Catégorie 4</a></li>
-            <li class="categorie-blog-item"><a href="#" class="categorie-blog-item-link">Catégorie 5</a></li>
-          </ul>
-        </div>
-        
-        <div class="newsletter">
-          <div class="newsletter-wrapper">
-            <span class="close-btn glyphicon glyphicon-remove"></span>
-            <div class="subscribe-wrapper">
-              <h2 class="title_newsletter">Recevoir la newsletter</h2>
-              <input type="email" name="email" class="subscribe-input" placeholder="Votre e-mail">
-              <div class="submit-btn">Envoyer</div>
-            </div>
-          </div>
-        </div> -->
+       
     </div>
     
     </div>

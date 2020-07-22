@@ -8,7 +8,7 @@
   <?php wp_head(); ?>
   
   <link rel="stylesheet" href="content/themes/carole/public/css/style.css" />
-  <link rel="icon" href="images/favicon.ico" type="images/jpg" sizes="32x32">
+  <link rel="icon" href="app/assets/images/favicon.ico" type="images/jpg" sizes="32x32">
   
 </head>
 
