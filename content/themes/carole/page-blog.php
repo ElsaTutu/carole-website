@@ -38,12 +38,12 @@
       <div class="section">
         <h1 class="section_title"><p>Les derniers articles</p> 
         <div class="typewriter_icon">
-    <div class="slide"><i></i></div>
-    <div class="paper"></div>
-    <div class="keyboard"></div>
-</div>
-
+          <div class="slide"><i></i></div>
+          <div class="paper"></div>
+          <div class="keyboard"></div>
+        </div>
         </h1> 
+
         <div class="content-wrapper"> 
 
           <?php
@@ -54,22 +54,20 @@
             'numberposts' => 9
         ];
 
-        $wpqueryArticles = new WP_Query($args);
+          $wpqueryArticles = new WP_Query($args);
+          
+          if ($wpqueryArticles->have_posts()): while ($wpqueryArticles->have_posts()): $wpqueryArticles->the_post(); 
+          get_template_part('template-parts/blog/article-excerpt'); ?>
 
-        ?>
-
-        <?php if ($wpqueryArticles->have_posts()): while ($wpqueryArticles->have_posts()): $wpqueryArticles->the_post(); ?>
-
-            <?php get_template_part('template-parts/blog/article-excerpt'); ?>
-
-        <?php endwhile; endif; ?> 
+          <?php endwhile; endif; ?> 
           
 
       <div class="video_wrapper">
+        
         <h2 class="video_title">La dernière vidéo</h2>
-         <iframe 
-src="https://www.youtube.com/embed/tgbNymZ7vqY">
-</iframe> 
+            <iframe 
+            src="https://www.youtube.com/embed/tgbNymZ7vqY">
+          </iframe> 
       </div>
     </div>
       </div>
@@ -80,6 +78,13 @@ src="https://www.youtube.com/embed/tgbNymZ7vqY">
        
     </div>
     
+    </div>
+
+    <!-- https://html-online.com/articles/dynamic-scroll-back-top-page-button-javascript/ -->
+    <div class="scroll-back">
+      <a href="#top">
+          <i class="fa fa-angle-up"  aria-hidden="true"></i>
+      </a>
     </div>
 
 

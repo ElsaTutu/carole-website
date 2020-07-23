@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying the 404 template in the Twenty Twenty theme.
+ * The template for displaying the 404 template in 
  *
  * @package WordPress
  * @subpackage carole
@@ -24,7 +24,7 @@ get_header();
             <hr>
             <div class="_1">La page que vous cherchez</div>
             <div class="_2">n'est plus ici</div>
-            <a class="error_page_button" href="#">Retourner à l'accueil</a>
+            <a class="error_page_button" href="">Retourner à l'accueil</a>
         </div>
     </div>
 

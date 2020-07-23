@@ -74,4 +74,39 @@ add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
 
 
 
-//display the sub-categories of "blog-article" category
+//search engine
+function gt_search_filter($query) {
+if ($query->is_search) {
+$query->set('post_type', 'post');
+}
+return $query;
+}
+
+add_filter('pre_get_posts','gt_search_filter');
+
+
+/**
+ * Add HTML5 theme support.
+ */
+function wpdocs_after_setup_theme() {
+    add_theme_support( 'html5', array( 'search-form' ) );
+}
+add_action( 'after_setup_theme', 'wpdocs_after_setup_theme' );
+
+
+
+// filtrer la recherche WP
+function ma_recherche_filter( $query )
+{
+	$pagesAExclure = array( 80, 62,61, 60, 59, 58, 57, 56, 55, 54, 53, 52, 51, 50, 49, 41, 38, 37, 36, 35, 34, 1, 8, 33 ); //id page/post à exclure (séparés par une virgule)
+    if ( $query->is_search )
+    {
+        $query->set( 'post__not_in', $pagesAExclure );
+    }
+    return $query;
+}
+add_filter('pre_get_posts','ma_recherche_filter');
+
+
+
+

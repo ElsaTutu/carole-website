@@ -1,17 +1,17 @@
         <div class="search-bar blog-search-bar">
           <form method="get" action="#">
             <div class="text-center blog-text-center">
-                <input type="text" id="search" placeholder="recherche">
-                <i class="fa fa-search" aria-hidden="true"></i>     
+              <h2>Vous cherchez quelque chose ?  </br> Cliquez <a href="<?php bloginfo('url'); ?>/search/">ici</a> </h2> 
+                <!-- <input type="text" id="search" placeholder="recherche">
+                <i class="fa fa-search" aria-hidden="true"></i>    -->
+
             </div>
           </form>
          </div>
 
         <div class="categories">
           <h2 class="title_categories">Les catégories</h2>
-          <ul class="categorie-blog-list">
-            
-            
+          <ul class="categorie-blog-list"> 
               <?php 
 
               //https://wordpress.stackexchange.com/questions/360088/get-parent-category-id-from-child-category-page-for-custom-taxonomy
@@ -32,22 +32,17 @@
                     }                   
                     }  ?>
 
-                    
-
-                    
-
           </ul>
         </div>
 
-        
-        
+ 
         <div class="newsletter">
           <div class="newsletter-wrapper">
             <span class="close-btn glyphicon glyphicon-remove"></span>
             <div class="subscribe-wrapper">
-              <h2 class="title_newsletter">Recevoir la newsletter</h2>
-              <input type="email" name="email" class="subscribe-input" placeholder="Votre e-mail">
-              <div class="submit-btn">Envoyer</div>
+              <h3 class="title_newsletter">Vous souhaitez recevoir la newsletter ?</h3>
+              <a href="<?php bloginfo('url'); ?>/newsletter/" target="_blank" class="submit-btn">Cliquez ici</a>
+              
             </div>
           </div>
         </div>

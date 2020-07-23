@@ -78,13 +78,20 @@
       </div>
     </div>
 
-        <div class="search-bar">
+        <!-- <div class="search-bar">
       <form method="get" action="#">
         <div class="text-center">
             <input type="text" id="search" placeholder="recherche">
             <i class="fa fa-search" aria-hidden="true"></i>   
         </div>
       </form>
+    </div> -->
+
+    <!-- https://html-online.com/articles/dynamic-scroll-back-top-page-button-javascript/ -->
+    <div class="scroll-back">
+      <a href="#top">
+          <i class="fa fa-angle-up"  aria-hidden="true"></i>
+      </a>
     </div>
 
 
