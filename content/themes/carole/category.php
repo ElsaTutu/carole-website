@@ -4,7 +4,7 @@
 
 <?php get_header() ?>
 
-<div class="wrapper">
+<div class="wrapper" style="height: 80vh;">
     <div class="wrapper-left">
 
       <div class="section">

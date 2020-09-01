@@ -24,15 +24,11 @@
     </section>
 
 
-<section class="faq">
-      <h2 class="faq-main-title">Les questions fréquentes</h2>
-        <ul class="faq-ul">
-          <li class="faq-li">
-            <input type="checkbox" checked class="faq-input">
-            <i class="faq-icon"></i>
-            
-
-          <?php
+<h2 class="faq-main-title">Les questions fréquentes</h2>
+  
+ <section class="grid__faq" id="grid">
+        
+           <?php
                 $args = [
             'post_type' => 'post',
             'category_name' => 'a-propos-questions-frequentes',
@@ -49,10 +45,9 @@
             <?php get_template_part('template-parts/a-propos/questions-frequentes'); ?>
 
         <?php endwhile; endif; ?>
-        </li>
-          
-         
-        </ul>
+        
+
+       
     </section>
 
 

@@ -8,37 +8,22 @@ var app = {
     showSlides();
 
     function showSlides() {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("dot");
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";  
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}    
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active-dot", "");
-    }
-    slides[slideIndex-1].style.display = "block";  
-    dots[slideIndex-1].className += " active-dot";
-    setTimeout(showSlides, 5000); // Change image every 5 seconds
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {slideIndex = 1}    
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active-dot", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active-dot";
+        setTimeout(showSlides, 5000); // Change image every 5 seconds
     };
-
-    
-
-//     window.scroll({
-//   top: 0, 
-//   left: 0, 
-//   behavior: 'smooth'
-// });
-
-    
-
-    
-    
-    
-
-    
+   
   },
 
   activeLink: function(){
@@ -53,6 +38,8 @@ var app = {
                 }
             });
         }
+
+        
 };
 
 // burger menu
@@ -97,21 +84,21 @@ var TxtType = function(el, toRotate, period) {
         }, delta);
     };
 
-    // window.onload = function() {
-    //     var elements = document.getElementsByClassName('typewrite');
-    //     for (var i=0; i<elements.length; i++) {
-    //         var toRotate = elements[i].getAttribute('data-type');
-    //         var period = elements[i].getAttribute('data-period');
-    //         if (toRotate) {
-    //           new TxtType(elements[i], JSON.parse(toRotate), period);
-    //         }
-    //     }
-    //     // INJECT CSS
-    //     var css = document.createElement("style");
-    //     css.type = "text/css";
-    //     css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
-    //     document.body.appendChild(css);
-    // };
+    window.onload = function() {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+        document.body.appendChild(css);
+    };
 
 
     /*Scroll to top when arrow up clicked BEGIN*/

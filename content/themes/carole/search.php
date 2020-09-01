@@ -13,7 +13,7 @@ get_search_form();  ?>
 
 
 
-<div class="wrapper">
+<div class="wrapper" style="min-height: 75vh;">
     <div class="wrapper-left">
 
         <div class="section">
@@ -33,6 +33,7 @@ get_search_form();  ?>
                     while ( have_posts() ) : the_post(); 
                     get_template_part('template-parts/blog/article-excerpt'); 
                     endwhile; ?>
+                    
 
                     <?php else : ?>
 

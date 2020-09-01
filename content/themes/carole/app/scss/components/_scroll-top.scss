@@ -36,12 +36,23 @@
   margin-bottom: 1.5em;
   padding-top: 2em;
 
-  
-
   @media (min-width: $breakpoint-medium) {
-      padding-top: 0;
-      
+      padding-top: 0;  
     }
+}
+
+.fa-angle-up:hover {
+  @media (min-width: $breakpoint-medium) {
+      background-color: $footer-bg;
+      color: $black;
+    }
+}
+
+.fa-angle-up {
+    border-radius: 10%;
+    font-size: 40px;
+    text-decoration: none;
+    padding: 0.2em;
 }
 
 

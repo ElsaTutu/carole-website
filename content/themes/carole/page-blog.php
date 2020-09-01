@@ -62,13 +62,13 @@
           <?php endwhile; endif; ?> 
           
 
-      <div class="video_wrapper">
+      <!-- <div class="video_wrapper">
         
         <h2 class="video_title">La dernière vidéo</h2>
             <iframe 
             src="https://www.youtube.com/embed/tgbNymZ7vqY">
           </iframe> 
-      </div>
+      </div> -->
     </div>
       </div>
     </div>

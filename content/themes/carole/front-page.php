@@ -45,7 +45,7 @@
     </section>
 
 
-    <div class="typewrite">
+    <div class="typewriter">
       <a href="" class="typewrite" data-period="2000" data-type='[ "Mes compétences", "Mon savoir-faire", "Vos besoins"]'>
         <span class="wrap"></span>
       </a>
