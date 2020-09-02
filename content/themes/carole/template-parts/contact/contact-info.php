@@ -1,5 +1,5 @@
 <div class="contact-info__part">
-                    <div class="contact-info__part__image_01"></div>
+                    <div class="contact-info__part__image_01" style="background-image: url('/images/icons/icons8-gmail-100.png');"></div>
                     <div class="contact-info__part__right__part">
                       <h2 class="contact-info__part__label">Email</h2>
                       <!-- On peut utiliser ce genre de chose pour éviter les spam : https://www.nicolas-hoffmann.net/utilitaires/crypteur.php -->
@@ -10,7 +10,7 @@
                 
 
                 <div class="contact-info__part">
-                    <div class="contact-info__part__image_02"></div>
+                    <div class="contact-info__part__image_02" style="background-image: url('/images/icons/icons8-gmail-100.png');"></div>
                     <div class="contact-info__part__right__part">
                       
                       <h2 class="contact-info__part__label">Téléphone</h2>

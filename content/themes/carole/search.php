@@ -45,11 +45,11 @@ get_search_form();  ?>
         </div>
 
         <!-- scroll bar-->
-          <div class="scroll-back">
+          <!-- <div class="scroll-back">
             <a href="#top">
                 <i class="fa fa-angle-up"  aria-hidden="true"></i>
             </a>
-          </div>
+          </div> -->
 
     </div>
 
